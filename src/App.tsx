@@ -13,9 +13,11 @@ import { ProductsPage } from "@/pages/ProductsPage"
 import { QuotePage } from "@/pages/QuotePage"
 import { TechnicalPage } from "@/pages/TechnicalPage"
 
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '')
+
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <ErrorBoundary>
         <Routes>
           <Route element={<Layout />}>
