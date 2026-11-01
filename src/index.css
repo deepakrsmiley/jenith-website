@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #11344a;
+  --color-navy-deep: #0c2434;
+  --color-corp: #173b57;
+  --color-teal: #18b2a2;
+  --color-mist: #f5f5f7;
+  --color-line: #d2d2d7;
+  --color-ink: #1d1d1f;
+  --color-muted: #86868b;
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #fbfbfd;
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.47;
+  letter-spacing: -0.012em;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: #1d1d1f;
+  color: #f5f5f7;
+}
+
+section[id] {
+  scroll-margin-top: calc(var(--header-offset, 108px) + 12px);
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  z-index: 80;
+  transform: translateY(-120%);
+  background: #ffffff;
+  color: #11344a;
+  padding: 0.7rem 1rem;
+  font-size: 0.95rem;
+}
+
+.skip-link:focus {
+  transform: translateY(0.75rem);
+}
+
+@keyframes hero-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.07);
+  }
+}
+
+.hero-zoom {
+  animation: hero-zoom 26s ease-out forwards;
+}
+
+.accordion-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+
+.accordion-panel[data-open="true"] {
+  grid-template-rows: 1fr;
+}
+
+.accordion-panel > div {
+  overflow: hidden;
+}
+
+.masonry {
+  columns: 1;
+  column-gap: 1rem;
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .masonry {
+    columns: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry {
+    columns: 3;
+  }
+}
+
+@keyframes scroll-hint {
+  0% {
+    transform: scaleY(0.35);
+    transform-origin: top;
+    opacity: 0.2;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(0.35);
+    transform-origin: top;
+    opacity: 0.2;
+  }
+}
+
+.scroll-hint {
+  animation: scroll-hint 2s ease-in-out infinite;
+}
+
+.menu-panel {
+  animation: menu-in 0.28s ease;
+}
+
+@keyframes menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero-zoom,
+  .scroll-hint,
+  .menu-panel {
+    animation: none;
+  }
+
+  .accordion-panel {
+    transition: none;
+  }
+}
