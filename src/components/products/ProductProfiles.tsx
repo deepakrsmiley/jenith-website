@@ -14,9 +14,10 @@ export function ProductProfiles({ product }: { product: Product }) {
           <>
             <h2 className="text-2xl text-ink">Profiles and sizes</h2>
             <p className="mt-3 max-w-3xl text-muted">
-              Dimensions are in millimetres. A cell with more than one height lists alternative sections. The photograph shows the profile; the exact unit is confirmed with the quotation.
+              Dimensions are in millimetres. Where a cell lists more than one figure, each figure is an alternative.
+              {profiles.some((profile) => profile.image) ? " The photograph shows the profile." : ""} The quotation confirms the exact unit.
             </p>
-            <div className="mt-10 grid gap-8 md:grid-cols-2">
+            <div className={`mt-10 grid gap-8 ${profiles.length > 1 ? "md:grid-cols-2" : ""}`}>
               {profiles.map((profile) => (
                 <article key={profile.name} className="overflow-hidden rounded-[28px] bg-white shadow-[0_24px_60px_rgba(0,0,0,0.06)]">
                   {profile.image ? (
@@ -64,9 +65,9 @@ export function ProductProfiles({ product }: { product: Product }) {
 
         {others.length > 0 ? (
           <div className={profiles.length > 0 ? "mt-16" : ""}>
-            <h2 className="text-2xl text-ink">Other profiles</h2>
+            <h2 className="text-2xl text-ink">{profiles.length > 0 ? "Other profiles" : "Types"}</h2>
             <p className="mt-3 max-w-3xl text-muted">
-              These sections are quoted from the profile name and the dimensions on the drawing. Sizes are not fixed on this page.
+              Name the type on the enquiry. Size and finish are confirmed from the drawing or the details you send.
             </p>
             <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {others.map((profile) => (

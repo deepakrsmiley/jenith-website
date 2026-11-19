@@ -9,7 +9,7 @@ export function ProductShowcase() {
         <SectionHeading
           eyebrow="Products"
           title="A catalogue organised around the project."
-          text="Seven principal categories cover boundary walls, masonry, paving, kerbs, drainage, reinforced elements, and custom concrete products. Open a category for the details needed in a quotation."
+          text="The catalogue covers blocks, pavers, kerbs, drains, walls, chambers, tanks, culverts, barriers, cover slabs, and custom precast. Open a category for the details needed in a quotation."
         />
         <div className="mt-16 grid gap-x-8 gap-y-16 md:grid-cols-2 xl:grid-cols-3">
           {products.map((product, index) => (

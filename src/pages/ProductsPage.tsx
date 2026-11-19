@@ -8,7 +8,7 @@ export function ProductsPage() {
     <>
       <PageMeta
         title="Products | NEXCON"
-        description="Precast compound walls, concrete blocks, interlocking pavers, kerb stones, U-drains, RCC elements, and custom concrete products."
+        description="Precast walls, blocks, pavers, kerbs, drains, chambers, water tanks, culverts, crash barriers, cover slabs, and custom concrete products."
       />
       <PageHero
         eyebrow="Products"

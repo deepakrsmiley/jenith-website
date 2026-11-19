@@ -77,10 +77,10 @@ export const products: Product[] = [
     slug: "concrete-blocks",
     name: "Solid and Hollow Concrete Blocks",
     summary:
-      "Concrete masonry products for suitable structural and non-structural applications according to project specifications.",
+      "Solid blocks in 4 inch, 6 inch, and 8 inch widths, plus hollow blocks quoted to the project specification.",
     description: [
-      "Solid and hollow blocks are quoted against the dimensions, strength class, density, and quantity stated for the project. The appropriate block is selected for the stated application, whether structural or non-structural.",
-      "Published sizes and grades are not listed here. Confirmed specifications are issued with the proposal after the technical details have been reviewed.",
+      "Solid blocks are offered in three widths. Each size below is length × width × height in millimetres. The inch name is the width.",
+      "Hollow blocks are quoted against the dimensions, strength class, density, and quantity stated for the project. Strength class and density are confirmed with the proposal.",
     ],
     image: "photo-1518005020951-eccb494ad742",
     gallery: [
@@ -95,15 +95,26 @@ export const products: Product[] = [
       { label: "Quantity", detail: "Number of blocks, or the wall area to be covered." },
     ],
     suitableFor: ["Structural masonry", "Non-structural walls", "Partition work"],
+    profiles: [
+      {
+        name: "Solid blocks",
+        detail: "The three solid sizes commonly requested. Hollow sizes are sent with the enquiry.",
+        sizes: [
+          { length: "400", width: "100 (4 inch)", height: "200" },
+          { length: "400", width: "150 (6 inch)", height: "200" },
+          { length: "400", width: "200 (8 inch)", height: "200" },
+        ],
+      },
+    ],
   },
   {
     slug: "interlocking-pavers",
     name: "Interlocking Pavers",
     summary:
-      "Paving solutions for walkways, parking areas, landscaping, and external spaces.",
+      "Rubber-mould, hydraulic, grass, and flexi pavers for walkways, parking, landscaping, and external spaces.",
     description: [
-      "Interlocking pavers are discussed for walkways, parking, landscaping, and other external surfaces. Thickness, shape, grade, and the traffic the surface must accept are the details used to review a request.",
-      "Colour, laying pattern, and edge conditions can be included with the enquiry when they are already decided. They are not treated as a fixed range on this website.",
+      "Name the paver type, the thickness, and the traffic the surface must take. Colour, laying pattern, and edge conditions can be included when they are already decided.",
+      "Rubber-mould pavers are the standard interlocking unit. Hydraulic pavers are for heavier pressing and tighter tolerances. Grass pavers leave openings for turf. Flexi pavers follow a curve or an irregular edge.",
     ],
     image: "photo-1416331108676-a22ccb276e35",
     gallery: [
@@ -118,6 +129,12 @@ export const products: Product[] = [
       { label: "Intended traffic", detail: "Pedestrian, light vehicle, or heavier use." },
     ],
     suitableFor: ["Walkways", "Parking areas", "Landscaping", "External spaces"],
+    otherProfiles: [
+      { name: "Rubber mould pavers", detail: "Standard interlocking units cast in a rubber mould." },
+      { name: "Hydraulic pavers", detail: "Hydraulically pressed units for surfaces that need a tighter finish." },
+      { name: "Grass pavers", detail: "Open units that let grass grow through the paved surface." },
+      { name: "Flexi pavers", detail: "Units that follow a curve or an irregular edge." },
+    ],
   },
   {
     slug: "kerb-stones",
@@ -210,6 +227,114 @@ export const products: Product[] = [
       { label: "Loading requirements", detail: "The load case the drain must be reviewed against." },
     ],
     suitableFor: ["Infrastructure drainage", "Civil engineering works", "Site drainage"],
+  },
+  {
+    slug: "chambers",
+    name: "Chambers",
+    summary: "Precast inspection and junction chambers for drainage and service lines.",
+    description: [
+      "Chambers are quoted from the internal size, depth, wall thickness, and the pipes or ducts that enter the unit. Send the section and the cover arrangement with the enquiry.",
+      "Opening positions, benching, and step irons are taken from the drawing. They are confirmed with the proposal.",
+    ],
+    image: "photo-1429497419816-9ca5cfb4571a",
+    gallery: ["photo-1429497419816-9ca5cfb4571a", "photo-1477959858617-67f85cf4f1df", "photo-1531834685032-c34bf0d84c77"],
+    parameters: [
+      { label: "Internal size", detail: "Clear length, width, and depth of the chamber." },
+      { label: "Wall thickness", detail: "Thickness stated on the drawing or brief." },
+      { label: "Openings", detail: "Pipe or duct positions, diameters, and invert levels." },
+      { label: "Cover", detail: "Cover slab or frame loading the chamber must accept." },
+    ],
+    suitableFor: ["Drainage networks", "Service ducts", "Inspection access"],
+  },
+  {
+    slug: "water-tanks",
+    name: "Water Tanks",
+    summary: "Precast concrete tanks for water storage, reviewed from capacity and the site drawing.",
+    description: [
+      "Tank enquiries need the capacity or internal dimensions, whether the tank is above or below ground, and the inlet, outlet, and overflow positions.",
+      "Wall thickness, base, cover, and any divider walls are taken from the drawing. Waterproofing and exposure are confirmed during review.",
+    ],
+    image: "photo-1460317442991-0ec209397118",
+    gallery: ["photo-1460317442991-0ec209397118", "photo-1565008447742-97f6f38c985c", "photo-1503387762-592deb58ef4e"],
+    parameters: [
+      { label: "Capacity", detail: "Stored volume, or the internal dimensions that set it." },
+      { label: "Arrangement", detail: "Above ground or below ground, and any divider walls." },
+      { label: "Connections", detail: "Inlet, outlet, overflow, and access positions." },
+      { label: "Cover", detail: "Open top, cover slab, or access opening." },
+    ],
+    suitableFor: ["Water storage", "Sites and compounds", "Utility reserves"],
+  },
+  {
+    slug: "retaining-walls",
+    name: "Retaining Walls",
+    summary: "Precast retaining-wall units for changes in ground level.",
+    description: [
+      "Retaining walls are reviewed from the retained height, the surcharge behind the wall, and the ground conditions. Panel length and thickness come from the drawing.",
+      "Drainage behind the wall, the toe or base, and how units connect should be included when they are already decided.",
+    ],
+    image: "photo-1486325212027-8081e485255e",
+    gallery: ["photo-1486325212027-8081e485255e", "photo-1493397212122-2b85dda8106b", "photo-1511818966892-d7d671e672a2"],
+    parameters: [
+      { label: "Retained height", detail: "Height of soil or fill the wall has to hold." },
+      { label: "Surcharge", detail: "Load on the ground behind the wall, if known." },
+      { label: "Unit size", detail: "Panel length, height, and thickness on the drawing." },
+      { label: "Foundation", detail: "Base, toe, and ground conditions from the project." },
+    ],
+    suitableFor: ["Level changes", "Plot edges", "Road and site cuttings"],
+  },
+  {
+    slug: "crash-barriers",
+    name: "Crash Barriers",
+    summary: "Precast concrete barriers for separating traffic and protecting work areas.",
+    description: [
+      "Crash-barrier enquiries need the profile, unit length, and the road or site condition the barrier is for. A named containment level or drawing is the usual starting point.",
+      "End units, connections, and any reflective or joint details should be noted when the layout is already known.",
+    ],
+    image: "photo-1531834685032-c34bf0d84c77",
+    gallery: ["photo-1531834685032-c34bf0d84c77", "photo-1477959858617-67f85cf4f1df", "photo-1541888946425-d81bb19240f5"],
+    parameters: [
+      { label: "Profile", detail: "The barrier section named on the drawing or specification." },
+      { label: "Length", detail: "Unit length and the total run to be supplied." },
+      { label: "Containment", detail: "Any containment or performance level the project states." },
+      { label: "Connections", detail: "Joint, end terminal, and fixing details if already decided." },
+    ],
+    suitableFor: ["Roads", "Work zones", "Site separation"],
+  },
+  {
+    slug: "box-culverts",
+    name: "Box Culverts",
+    summary: "Precast box culverts for crossings, waterways, and buried service routes.",
+    description: [
+      "Box culverts are quoted from the internal opening, the wall and slab thickness, the unit length, and the earth and traffic load over the unit.",
+      "Invert level, skew, and how units join are taken from the civil drawing. Cover slabs are a separate product when the opening is not a closed box.",
+    ],
+    image: "photo-1504307651254-35680f356dfd",
+    gallery: ["photo-1504307651254-35680f356dfd", "photo-1541888946425-d81bb19240f5", "photo-1429497419816-9ca5cfb4571a"],
+    parameters: [
+      { label: "Internal opening", detail: "Clear width and height of the box." },
+      { label: "Thickness", detail: "Wall, roof, and base thickness on the drawing." },
+      { label: "Length", detail: "Unit length or the total crossing length." },
+      { label: "Loading", detail: "Fill depth and the traffic or other load over the culvert." },
+    ],
+    suitableFor: ["Road crossings", "Waterways", "Buried services"],
+  },
+  {
+    slug: "cover-slabs",
+    name: "Cover Slabs",
+    summary: "Precast cover slabs for drains, chambers, culverts, and service openings.",
+    description: [
+      "Cover slabs are reviewed from the clear opening they span, the slab thickness, and the load the slab must accept. Bearing on the supporting walls should be shown on the drawing.",
+      "Lifting points and any access opening in the slab are confirmed with the proposal.",
+    ],
+    image: "photo-1545558014-8692077e9b5c",
+    gallery: ["photo-1545558014-8692077e9b5c", "photo-1503387762-592deb58ef4e", "photo-1541888946425-d81bb19240f5"],
+    parameters: [
+      { label: "Opening", detail: "Clear span and width the slab has to cover." },
+      { label: "Thickness", detail: "Slab thickness stated on the drawing." },
+      { label: "Loading", detail: "Pedestrian, vehicle, or other load on the slab." },
+      { label: "Bearing and lifting", detail: "Bearing length, lifting points, and any access opening." },
+    ],
+    suitableFor: ["U-drains", "Chambers", "Culverts and ducts"],
   },
   {
     slug: "rcc-precast-elements",
