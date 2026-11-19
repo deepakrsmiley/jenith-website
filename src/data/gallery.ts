@@ -57,6 +57,14 @@ export const galleryItems: GalleryItem[] = [
     alt: "Illustrative photograph of a house exterior and paved approach.",
   },
   {
+    id: "kerb-edge",
+    title: "Kerb along a paved edge",
+    image: "/kerbs/roadside.jpg",
+    category: "products",
+    aspect: "wide",
+    alt: "Concrete kerb stones separating a paved walkway from grass.",
+  },
+  {
     id: "site-work",
     title: "Active construction site",
     image: "photo-1541888946425-d81bb19240f5",

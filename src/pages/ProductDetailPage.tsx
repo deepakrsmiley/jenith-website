@@ -5,6 +5,7 @@ import { Lightbox } from "@/components/gallery/Lightbox"
 import type { GalleryItem } from "@/data/gallery"
 import { PageHero } from "@/components/layout/PageHero"
 import { ProductCard } from "@/components/products/ProductCard"
+import { ProductProfiles } from "@/components/products/ProductProfiles"
 import { PageMeta } from "@/components/seo/PageMeta"
 import { Button } from "@/components/ui/Button"
 import { Photo } from "@/components/ui/Photo"
@@ -98,6 +99,7 @@ export function ProductDetailPage() {
           </div>
         </div>
       </section>
+      <ProductProfiles product={product} />
       <section className="bg-mist py-16">
         <div className="mx-auto w-full max-w-[1120px] px-5 sm:px-8">
           <h2 className="text-2xl text-ink">Related products</h2>

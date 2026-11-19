@@ -35,10 +35,9 @@ export function Photo({
     )
   }
 
+  const local = id.startsWith("/")
   const imageProps: ImgHTMLAttributes<HTMLImageElement> = {
-    src: unsplash(id, 1600),
-    srcSet: [640, 960, 1280, 1600].map((size) => `${unsplash(id, size)} ${size}w`).join(", "),
-    sizes,
+    src: local ? `${import.meta.env.BASE_URL}${id.slice(1)}` : unsplash(id, 1600),
     alt,
     width,
     height,
@@ -46,6 +45,11 @@ export function Photo({
     loading: priority ? "eager" : "lazy",
     decoding: "async",
     onError: () => setFailed(true),
+  }
+
+  if (!local) {
+    imageProps.srcSet = [640, 960, 1280, 1600].map((size) => `${unsplash(id, size)} ${size}w`).join(", ")
+    imageProps.sizes = sizes
   }
 
   if (priority) {

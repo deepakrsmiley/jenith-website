@@ -8,7 +8,7 @@ export function TechnicalPage() {
     <>
       <PageMeta
         title="Technical & Quality | NEXCON"
-        description="Enquiry parameters for compound walls, U-drains, concrete blocks, pavers, and custom precast elements."
+        description="Enquiry parameters for compound walls, U-drains, concrete blocks, pavers, kerb stones, and custom precast elements."
       />
       <PageHero
         eyebrow="Technical & Quality"

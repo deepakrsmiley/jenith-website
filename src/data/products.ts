@@ -3,6 +3,19 @@ export type ProductParameter = {
   detail: string
 }
 
+export type ProductSize = {
+  length: string
+  width: string
+  height: string
+}
+
+export type ProductProfile = {
+  name: string
+  detail: string
+  image?: string
+  sizes?: ProductSize[]
+}
+
 export type Product = {
   slug: string
   name: string
@@ -12,7 +25,17 @@ export type Product = {
   gallery: string[]
   parameters: ProductParameter[]
   suitableFor: string[]
+  profiles?: ProductProfile[]
+  otherProfiles?: ProductProfile[]
+  finishes?: string[]
 }
+
+const standardKerbSizes: ProductSize[] = [
+  { length: "600", width: "100–200", height: "450 / 420 / 400" },
+  { length: "600", width: "100–200", height: "300 / 350" },
+  { length: "915", width: "100–150", height: "305" },
+  { length: "915", width: "100–150", height: "255 / 200 / 150" },
+]
 
 export const products: Product[] = [
   {
@@ -95,6 +118,75 @@ export const products: Product[] = [
       { label: "Intended traffic", detail: "Pedestrian, light vehicle, or heavier use." },
     ],
     suitableFor: ["Walkways", "Parking areas", "Landscaping", "External spaces"],
+  },
+  {
+    slug: "kerb-stones",
+    name: "Kerb Stones",
+    summary:
+      "Precast kerbs for road edges, footpaths, driveways, and landscaped boundaries, including half batter, flush, bullnose, and heel profiles.",
+    description: [
+      "Kerbs mark the edge between a carriageway, footpath, or planted area and give the pavement a defined line. A request can name one of the profiles below or a special section such as a splay, upstand, rollover, barrier, bus, gutter, drain, quadrant, corner, or crescent.",
+      "Sizes are in millimetres. Where a cell lists more than one height, each figure is an alternative section, not a single unit. The quotation confirms the profile, finish, and quantity. Other sizes are reviewed from the drawing or the dimensions you send.",
+    ],
+    image: "/kerbs/roadside.jpg",
+    gallery: [
+      "/kerbs/roadside.jpg",
+      "/kerbs/half-batter.jpg",
+      "/kerbs/flush.jpg",
+      "/kerbs/bullnose.jpg",
+      "/kerbs/heel.jpg",
+    ],
+    parameters: [
+      { label: "Profile", detail: "Half batter, flush, bullnose, heel, or another named section." },
+      { label: "Dimensions", detail: "Length, width, and height in millimetres." },
+      { label: "Finish", detail: "Shot blast, polished, honed, rubbed, acid etched, or smooth." },
+      { label: "Quantity", detail: "Piece count or the length of edge, plus the delivery location." },
+    ],
+    suitableFor: ["Road edges", "Footpaths", "Driveways", "Parking", "Landscaping"],
+    finishes: ["Shot blast", "Polished", "Honed", "Rubbed", "Acid etched", "Smooth"],
+    profiles: [
+      {
+        name: "Half batter",
+        detail: "A sloping face along the road side, used where the kerb has to turn vehicles back toward the carriageway.",
+        image: "/kerbs/half-batter.jpg",
+        sizes: standardKerbSizes,
+      },
+      {
+        name: "Flush",
+        detail: "A square section laid near the level of the adjoining surface, for crossovers and edges that vehicles cross.",
+        image: "/kerbs/flush.jpg",
+        sizes: standardKerbSizes,
+      },
+      {
+        name: "Bullnose",
+        detail: "A rounded top edge for footpaths, landscaping, and places where people walk close to the kerb.",
+        image: "/kerbs/bullnose.jpg",
+        sizes: standardKerbSizes,
+      },
+      {
+        name: "Heel kerb",
+        detail: "A lower section with a heel along the base, used as a lighter edge or where a shallow upstand is enough.",
+        image: "/kerbs/heel.jpg",
+        sizes: [
+          { length: "600", width: "100", height: "200" },
+          { length: "600", width: "75", height: "150" },
+        ],
+      },
+    ],
+    otherProfiles: [
+      { name: "Splay", detail: "A sloped face with a gentler rise from the road than a half batter." },
+      { name: "Upstand", detail: "A raised edge between the carriageway and the footpath." },
+      { name: "Rollover", detail: "A low profile that vehicles can mount, typically at driveways." },
+      { name: "Barrier", detail: "A higher containment section along the carriageway." },
+      { name: "Bus", detail: "A boarding-edge profile used at bus stops." },
+      { name: "Trief", detail: "A high-containment safety kerb where that section is specified." },
+      { name: "Gutter", detail: "A kerb combined with a channel for water at the road edge." },
+      { name: "Drain", detail: "A kerb used with edge drainage." },
+      { name: "Quadrant", detail: "A quarter-circle unit for a tight corner." },
+      { name: "Corner", detail: "A return unit where the edge changes direction." },
+      { name: "Crescent", detail: "A curved unit for a radius in the edge." },
+      { name: "Water dish channel", detail: "A shallow channel that carries surface water along the edge." },
+    ],
   },
   {
     slug: "precast-u-drains",
