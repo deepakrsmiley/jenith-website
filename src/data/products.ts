@@ -31,10 +31,10 @@ export type Product = {
 }
 
 const standardKerbSizes: ProductSize[] = [
-  { length: "600", width: "100–200", height: "450 / 420 / 400" },
-  { length: "600", width: "100–200", height: "300 / 350" },
-  { length: "915", width: "100–150", height: "305" },
-  { length: "915", width: "100–150", height: "255 / 200 / 150" },
+  { length: "600", width: "100 - 200", height: "450/420/400" },
+  { length: "600", width: "100 - 200", height: "300/350" },
+  { length: "915", width: "100 - 150", height: "305" },
+  { length: "915", width: "100 - 150", height: "255/200/150" },
 ]
 
 export const products: Product[] = [
