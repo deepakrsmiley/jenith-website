@@ -27,7 +27,7 @@ export function HomePage() {
   return (
     <>
       <PageMeta
-        title="NEXCON | Concrete Solutions"
+        title="nexconprecast | Concrete Solutions"
         description="Reliable precast concrete and construction material solutions for industrial, commercial, residential, and infrastructure projects."
       />
       <script type="application/ld+json">{JSON.stringify(structuredData)}</script>

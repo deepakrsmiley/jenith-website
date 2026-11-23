@@ -17,7 +17,7 @@ export function Logo({ tone = "dark", compact = false }: LogoProps) {
         <rect x="23" y="13" width="7" height="17" rx="1.5" fill="#18B2A2" />
       </svg>
       <span className="leading-none">
-        <span className="block text-[15px] font-semibold tracking-[-0.03em]">{company.name}</span>
+        <span className="block text-[15px] font-semibold tracking-[-0.04em] whitespace-nowrap">{company.name}</span>
         {compact ? null : (
           <span className={`mt-1 block text-[11px] font-medium tracking-[-0.01em] ${muted}`}>Concrete Solutions</span>
         )}

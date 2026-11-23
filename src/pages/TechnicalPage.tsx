@@ -7,13 +7,13 @@ export function TechnicalPage() {
   return (
     <>
       <PageMeta
-        title="Technical & Quality | NEXCON"
+        title="Technical & Quality | nexconprecast"
         description="Enquiry parameters for walls, drains, blocks, pavers, kerbs, chambers, tanks, culverts, barriers, cover slabs, and custom precast."
       />
       <PageHero
         eyebrow="Technical & Quality"
         title="A specification interface for the details that matter."
-        text="Send the parameters for the product you need. NEXCON confirms feasibility and specifications during review. Test reports are not shown unless a document exists."
+        text="Send the parameters for the product you need. nexconprecast confirms feasibility and specifications during review. Test reports are not shown unless a document exists."
         image="/catalog/precast/column-stubs.jpg"
       />
       <section className="bg-white py-16 md:py-24">

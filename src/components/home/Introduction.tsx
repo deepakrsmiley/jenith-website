@@ -26,7 +26,7 @@ export function Introduction() {
           </div>
         </Reveal>
         <Reveal delay={0.08}>
-          <SectionHeading eyebrow="About NEXCON" title="Building Trust Through Concrete Expertise." text={company.introduction} />
+          <SectionHeading eyebrow="About nexconprecast" title="Building Trust Through Concrete Expertise." text={company.introduction} />
           <div className="mt-8 border-t border-line">
             {benefits.map((benefit) => (
               <div key={benefit.number} className="grid grid-cols-[auto_1fr] gap-4 border-b border-line py-4">

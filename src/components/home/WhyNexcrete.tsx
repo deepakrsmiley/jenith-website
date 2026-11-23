@@ -9,7 +9,7 @@ export function WhyNexcrete() {
       <div className="mx-auto w-full max-w-[1120px] px-5 sm:px-8">
         <SectionHeading
           invert
-          eyebrow="Why NEXCON"
+          eyebrow="Why nexconprecast"
           title="A clear way to specify, review, and supply."
           text="The reasons below describe how an enquiry is handled. They are not claims of market position, lifespan, or certification."
         />

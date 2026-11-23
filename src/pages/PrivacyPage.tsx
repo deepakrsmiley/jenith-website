@@ -9,8 +9,8 @@ export function PrivacyPage() {
   return (
     <>
       <PageMeta
-        title="Privacy Policy | NEXCON"
-        description="How NEXCON handles information submitted through the quotation form."
+        title="Privacy Policy | nexconprecast"
+        description="How nexconprecast handles information submitted through the quotation form."
       />
       <PageHero
         eyebrow="Privacy Policy"
@@ -23,7 +23,7 @@ export function PrivacyPage() {
           <section>
             <h2 className="text-2xl text-ink">Who this notice covers</h2>
             <p className="mt-3">
-              The site is published for NEXCON. A postal address, phone number, and privacy contact will be added here when the company confirms them.
+              The site is published for nexconprecast. A postal address, phone number, and privacy contact will be added here when the company confirms them.
             </p>
           </section>
           <section>
@@ -37,7 +37,7 @@ export function PrivacyPage() {
             <p className="mt-3">
               {live
                 ? "An enquiry endpoint is configured. Submissions are sent to that service only when it returns a successful response. A failed request is not described as delivered."
-                : "No enquiry endpoint is configured. Valid submissions are stored in this browser under the local key nexcrete-demo-enquiries and are not transmitted to NEXCON, a CRM, an email service, or WhatsApp. Attachments are not uploaded. Clearing site data removes the local copy."}
+                : "No enquiry endpoint is configured. Valid submissions are stored in this browser under the local key nexcrete-demo-enquiries and are not transmitted to nexconprecast, a CRM, an email service, or WhatsApp. Attachments are not uploaded. Clearing site data removes the local copy."}
             </p>
           </section>
           <section>

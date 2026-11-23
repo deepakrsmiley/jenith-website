@@ -51,7 +51,7 @@ export function ProductDetailPage() {
 
   return (
     <>
-      <PageMeta title={`${product.name} | NEXCON`} description={product.summary} />
+      <PageMeta title={`${product.name} | nexconprecast`} description={product.summary} />
       <PageHero eyebrow="Products" title={product.name} text={product.summary} image={product.image} />
       <section className="bg-white py-16 md:py-24">
         <div className="mx-auto grid w-full max-w-[1120px] gap-12 px-5 sm:px-8 lg:grid-cols-[1.05fr_0.95fr]">

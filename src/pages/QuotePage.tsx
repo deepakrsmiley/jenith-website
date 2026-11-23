@@ -5,8 +5,8 @@ export function QuotePage() {
   return (
     <>
       <PageMeta
-        title="Request a Quote | NEXCON"
-        description="Request a NEXCON quotation with product details, quantity, delivery location, and any drawings."
+        title="Request a Quote | nexconprecast"
+        description="Request a nexconprecast quotation with product details, quantity, delivery location, and any drawings."
       />
       <section className="bg-[#f5f5f7] px-5 py-16 sm:px-8 md:py-24">
         <div className="mx-auto w-full max-w-[680px]">

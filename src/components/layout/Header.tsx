@@ -1,6 +1,6 @@
 import { useEffect, useId, useRef, useState } from "react"
 import { Link, useLocation } from "react-router-dom"
-import { announcement, navItems } from "@/data/site"
+import { announcement, company, navItems } from "@/data/site"
 import { Logo } from "@/components/ui/Logo"
 
 type HeaderProps = {
@@ -88,12 +88,12 @@ export function Header({ onHeight }: HeaderProps) {
 
   return (
     <div ref={shellRef} className={`fixed inset-x-0 top-0 z-50 ${solid ? "border-b border-black/8 bg-[#fbfbfd]/80 backdrop-blur-2xl backdrop-saturate-150" : ""}`}>
-      <div className={`px-5 py-2 text-center text-[11px] font-medium tracking-[0.12em] uppercase ${solid ? "text-muted" : "bg-black/70 text-white/70 backdrop-blur-md"}`}>
+      <div className={`px-5 py-2 text-center text-[11px] font-medium tracking-[0.08em] ${solid ? "text-muted" : "bg-black/70 text-white/70 backdrop-blur-md"}`}>
         {announcement}
       </div>
       <header className="transition-colors duration-300">
         <div className="mx-auto flex h-12 w-full max-w-[1240px] items-center justify-between gap-4 px-5 sm:px-8">
-          <Link to="/" className="shrink-0 rounded-sm" aria-label="NEXCON home">
+          <Link to="/" className="shrink-0 rounded-sm" aria-label={`${company.name} home`}>
             <Logo tone={solid ? "dark" : "light"} />
           </Link>
 

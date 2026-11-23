@@ -6,7 +6,7 @@ export function GalleryPage() {
   return (
     <>
       <PageMeta
-        title="Gallery | NEXCON"
+        title="Gallery | nexconprecast"
         description="Illustrative photographs of concrete products, construction, manufacturing, infrastructure, and material close-ups."
       />
       <PageHero

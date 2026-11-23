@@ -4,7 +4,7 @@ import { PageMeta } from "@/components/seo/PageMeta"
 export function NotFoundPage() {
   return (
     <>
-      <PageMeta title="Page not found | NEXCON" description="The requested NEXCON page could not be found." />
+      <PageMeta title="Page not found | nexconprecast" description="The requested nexconprecast page could not be found." />
       <section className="bg-white px-5 py-24 sm:px-8">
         <div className="mx-auto max-w-xl">
           <p className="text-[13px] font-medium text-teal">404</p>

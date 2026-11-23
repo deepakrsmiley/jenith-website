@@ -8,8 +8,8 @@ export function ContactPage() {
   return (
     <>
       <PageMeta
-        title="Contact Us | NEXCON"
-        description="Contact NEXCON for precast concrete and construction material quotations. Direct phone and email details are pending confirmation."
+        title="Contact Us | nexconprecast"
+        description="Contact nexconprecast for precast concrete and construction material quotations. Direct phone and email details are pending confirmation."
       />
       <PageHero
         eyebrow="Contact"
@@ -26,7 +26,7 @@ export function ContactPage() {
                 Write with the project in mind.
               </h2>
               <p className="mt-4 max-w-sm text-[16px] leading-relaxed text-white/60">
-                The form beside this note is the active way to reach NEXCON. A reply follows technical review.
+                The form beside this note is the active way to reach nexconprecast. A reply follows technical review.
               </p>
               <dl className="mt-10 divide-y divide-white/10">
                 {contactChannels.map((channel) => (

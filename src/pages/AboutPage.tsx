@@ -10,8 +10,8 @@ export function AboutPage() {
   return (
     <>
       <PageMeta
-        title="About Us | NEXCON"
-        description="NEXCON is a precast concrete and construction products company focused on quality, reliability, and project-specific solutions."
+        title="About Us | nexconprecast"
+        description="nexconprecast is a precast concrete and construction products company focused on quality, reliability, and project-specific solutions."
       />
       <PageHero
         eyebrow="About Us"
@@ -26,7 +26,7 @@ export function AboutPage() {
             <h2 className="text-[2rem] text-ink md:text-[2.5rem]">What the company is prepared to discuss.</h2>
             <div className="mt-6 space-y-4 text-muted">
               <p>
-                NEXCON works with project teams that need precast concrete and construction materials specified for a particular site. The conversation starts with drawings, quantities, and the intended application.
+                nexconprecast works with project teams that need precast concrete and construction materials specified for a particular site. The conversation starts with drawings, quantities, and the intended application.
               </p>
               <p>
                 Quotations are prepared for builders, contractors, architects, developers, and industrial buyers. Naming those roles describes who the work is for. It is not a list of clients or completed contracts.

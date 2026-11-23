@@ -1,6 +1,6 @@
-# NEXCON
+# nexconprecast
 
-Corporate website for NEXCON concrete and precast products. The company name on the live pages is NEXCON.
+Corporate website for nexconprecast concrete and precast products. The company name on the live pages is nexconprecast.
 
 ## Run locally
 

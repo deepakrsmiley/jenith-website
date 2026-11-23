@@ -7,8 +7,8 @@ export function ApplicationsPage() {
   return (
     <>
       <PageMeta
-        title="Applications | NEXCON"
-        description="Possible applications for NEXCON products across residential, commercial, industrial, infrastructure, drainage, and paving work."
+        title="Applications | nexconprecast"
+        description="Possible applications for nexconprecast products across residential, commercial, industrial, infrastructure, drainage, and paving work."
       />
       <PageHero
         eyebrow="Applications"

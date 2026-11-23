@@ -41,7 +41,7 @@ export function Hero() {
       <div ref={imageRef} className="absolute inset-x-0 -top-16 h-[120%]">
         <ImageCycle
           images={heroFrames}
-          alt="NEXCON precast concrete products, in the yard and during installation."
+          alt="nexconprecast precast concrete products, in the yard and during installation."
           priority
           frameClassName="h-full w-full"
           className="h-full w-full object-cover"

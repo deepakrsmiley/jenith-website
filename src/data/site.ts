@@ -1,15 +1,15 @@
 export const company = {
-  name: "NEXCON",
+  name: "nexconprecast",
   tagline: "Concrete Solutions",
-  division: "NEXCON Precast & Concrete Products",
+  division: "nexconprecast",
   summary:
     "Precast concrete and construction material solutions for industrial, commercial, residential, and infrastructure projects.",
   introduction:
-    "NEXCON is a precast concrete and construction products company focused on quality, reliability, technical understanding, and project-specific solutions. Each enquiry is reviewed against the drawings, application, and details supplied before a commercial proposal is discussed.",
+    "nexconprecast is a precast concrete and construction products company focused on quality, reliability, technical understanding, and project-specific solutions. Each enquiry is reviewed against the drawings, application, and details supplied before a commercial proposal is discussed.",
 }
 
 export const announcement =
-  "NEXCON | Precast concrete | Construction materials | Infrastructure solutions"
+  "nexconprecast | Precast concrete | Construction materials | Infrastructure solutions"
 
 export const navItems = [
   { label: "Home", to: "/" },
