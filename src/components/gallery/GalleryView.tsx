@@ -42,16 +42,16 @@ export function GalleryView() {
       <div className="masonry mt-6">
         {visible.map((item, index) => (
           <article key={item.id} className="masonry-item">
-            <button type="button" className="block w-full overflow-hidden rounded-[22px] text-left" onClick={() => setOpenIndex(index)}>
+            <button type="button" className="group block w-full overflow-hidden rounded-[22px] text-left shadow-[0_16px_40px_rgba(0,0,0,0.06)]" onClick={() => setOpenIndex(index)}>
               <Photo
                 id={item.image}
                 alt={item.alt}
-                className={`${aspectClass[item.aspect]} w-full object-cover`}
+                className={`${aspectClass[item.aspect]} w-full object-cover transition duration-700 group-hover:scale-[1.04]`}
                 sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
               />
             </button>
             <span className="mt-3 block text-[15px] font-medium text-ink">{item.title}</span>
-            <span className="mt-1 block text-[12px] text-muted">Illustrative photography</span>
+            <span className="mt-1 block text-[12px] text-muted">Works photography</span>
           </article>
         ))}
       </div>

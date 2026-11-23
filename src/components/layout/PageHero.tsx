@@ -1,23 +1,29 @@
 import { Link } from "react-router-dom"
-import { Photo } from "@/components/ui/Photo"
+import { ImageCycle } from "@/components/ui/ImageCycle"
 
 type PageHeroProps = {
   eyebrow: string
   title: string
   text: string
   image: string
+  images?: string[]
 }
 
-export function PageHero({ eyebrow, title, text, image }: PageHeroProps) {
+export function PageHero({ eyebrow, title, text, image, images }: PageHeroProps) {
+  const frames = images && images.length > 0 ? images : [image]
   return (
     <section className="relative isolate min-h-[520px] overflow-hidden bg-black text-white">
-      <Photo
-        id={image}
-        alt=""
-        priority
-        className="absolute inset-0 h-full w-full object-cover"
-        sizes="100vw"
-      />
+      <div className="absolute inset-0">
+        <ImageCycle
+          images={frames}
+          alt=""
+          priority
+          frameClassName="h-full w-full"
+          className="h-full w-full object-cover"
+          interval={7000}
+          sizes="100vw"
+        />
+      </div>
       <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/50 to-black/80" />
       <div className="relative mx-auto flex min-h-[520px] w-full max-w-[920px] flex-col justify-end px-6 py-20 text-center sm:px-8 md:py-24">
         <p className="text-[12px] font-medium tracking-[0.06em] text-white/60 uppercase">

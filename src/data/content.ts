@@ -111,37 +111,37 @@ export const applications = [
     slug: "residential",
     title: "Residential construction",
     caption: "Boundary walls, masonry, and external paving around homes and housing plots.",
-    image: "photo-1600585154340-be6161a56a0c",
+    image: "/catalog/walls/installation.jpg",
   },
   {
     slug: "commercial",
     title: "Commercial buildings",
     caption: "Materials for commercial plots, compounds, and associated external works.",
-    image: "photo-1486406146926-c627a92ad1ab",
+    image: "/catalog/walls/relief-panels.jpg",
   },
   {
     slug: "industrial",
     title: "Industrial facilities",
     caption: "Compound walls and concrete products for industrial premises and yards.",
-    image: "photo-1565008447742-97f6f38c985c",
+    image: "/catalog/precast/column-stubs.jpg",
   },
   {
     slug: "infrastructure",
     title: "Infrastructure development",
     caption: "Chambers, culverts, cover slabs, crash barriers, and other precast elements for civil work.",
-    image: "photo-1531834685032-c34bf0d84c77",
+    image: "/catalog/chambers/inspection-chamber.jpg",
   },
   {
     slug: "drainage",
     title: "Drainage and civil engineering",
     caption: "Precast U-drains and related components reviewed from civil drawings.",
-    image: "photo-1429497419816-9ca5cfb4571a",
+    image: "/catalog/drains/u-drain-stack.jpg",
   },
   {
     slug: "landscaping",
     title: "Landscaping and external paving",
     caption: "Interlocking pavers and kerb edges for walkways, parking, and landscaped external spaces.",
-    image: "photo-1600566753190-17f0baa2a6c3",
+    image: "/kerbs/roadside.jpg",
   },
 ] as const
 

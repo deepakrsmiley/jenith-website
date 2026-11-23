@@ -48,7 +48,7 @@ export function Lightbox({ items, index, onClose, onIndex }: LightboxProps) {
       >
         <div className="relative w-full max-w-5xl" onClick={(event) => event.stopPropagation()}>
           <p id={titleId} className="pr-16 text-[13px] font-medium text-white/75">
-            Illustrative photography · {item.title}
+            {item.title}
           </p>
           <Photo
             id={item.image}
@@ -59,7 +59,7 @@ export function Lightbox({ items, index, onClose, onIndex }: LightboxProps) {
             height={1066}
           />
           <p className="mt-3 text-sm text-white/70">
-            {index + 1} of {items.length}. This is not a completed NEXCON project.
+            {index + 1} of {items.length}
           </p>
           <button
             ref={closeRef}

@@ -20,7 +20,7 @@ export function ProductProfiles({ product }: { product: Product }) {
             <div className={`mt-10 grid gap-8 ${profiles.length > 1 ? "lg:grid-cols-2" : ""}`}>
               {profiles.map((profile) => {
                 const catalog = Boolean(profile.image && profile.sizes?.length)
-                const title = product.slug === "kerb-stones" ? `Kerb stone (${profile.name})` : profile.name
+                const title = product.slug === "kerb-stones" && profile.sizes?.length ? `Kerb stone (${profile.name})` : profile.name
                 return (
                   <article
                     key={profile.name}

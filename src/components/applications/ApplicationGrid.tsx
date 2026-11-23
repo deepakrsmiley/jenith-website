@@ -11,14 +11,13 @@ export function ApplicationGrid({ variant = "preview" }: { variant?: "preview" |
             <div className="relative">
             <Photo
               id={item.image}
-              alt={`Illustrative photograph for ${item.title}. Not a NEXCON project.`}
+              alt={`${item.title}. ${item.caption}`}
               className={`w-full object-cover transition-transform duration-700 group-hover:scale-[1.03] ${variant === "full" ? "aspect-[16/10]" : "aspect-[4/3]"}`}
               sizes={variant === "full" ? "(min-width: 768px) 50vw, 100vw" : "(min-width: 1024px) 33vw, 50vw"}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
             <div className="absolute inset-x-0 bottom-0 p-5 text-white">
-              <p className="text-[12px] font-medium text-teal">Illustrative</p>
-              <h3 className="mt-1 text-[21px] font-semibold tracking-[-0.02em] text-white">{item.title}</h3>
+              <h3 className="text-[21px] font-semibold tracking-[-0.02em] text-white">{item.title}</h3>
               <p className="mt-1 text-[14px] leading-snug text-white/80">{item.caption}</p>
             </div>
             </div>

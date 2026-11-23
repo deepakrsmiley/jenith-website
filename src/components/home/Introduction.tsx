@@ -1,7 +1,8 @@
 import { benefits } from "@/data/content"
+import { introFrames } from "@/data/gallery"
 import { company } from "@/data/site"
 import { Button } from "@/components/ui/Button"
-import { Photo } from "@/components/ui/Photo"
+import { ImageCycle } from "@/components/ui/ImageCycle"
 import { Reveal } from "@/components/ui/Reveal"
 import { SectionHeading } from "@/components/ui/SectionHeading"
 
@@ -11,15 +12,17 @@ export function Introduction() {
       <div className="mx-auto grid w-full max-w-[1120px] items-center gap-12 px-5 sm:px-8 lg:grid-cols-[1.05fr_0.95fr]">
         <Reveal>
           <div className="relative">
-            <Photo
-              id="photo-1504307651254-35680f356dfd"
-              alt="Illustrative photograph of construction work. Not a NEXCON project."
-              className="aspect-[4/5] w-full rounded-[32px] object-cover shadow-[0_30px_80px_rgba(0,0,0,0.12)] sm:aspect-[5/4]"
+            <ImageCycle
+              images={introFrames}
+              alt="Precast wall panels, columns, and chambers."
+              frameClassName="aspect-[4/5] w-full rounded-[32px] shadow-[0_30px_80px_rgba(0,0,0,0.12)] sm:aspect-[5/4]"
+              className="h-full w-full object-cover"
               sizes="(min-width: 1024px) 50vw, 100vw"
-              width={1400}
-              height={1600}
+              interval={6200}
+              startAt={2}
+              showIndex
             />
-            <p className="mt-3 text-[12px] text-muted">Illustrative photography</p>
+            <p className="mt-3 text-[12px] text-muted">Yard and installation photography</p>
           </div>
         </Reveal>
         <Reveal delay={0.08}>

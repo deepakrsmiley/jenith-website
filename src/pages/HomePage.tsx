@@ -67,7 +67,7 @@ export function HomePage() {
           <SectionHeading
             eyebrow="Applications"
             title="Where these products are typically considered."
-            text="The photographs illustrate possible settings. They are not completed NEXCON projects."
+            text="Yard and installation photographs for the settings these products are built for."
           />
           <div className="mt-10">
             <ApplicationGrid />
@@ -79,19 +79,21 @@ export function HomePage() {
         <div className="mx-auto w-full max-w-[1120px] px-5 sm:px-8">
           <SectionHeading
             eyebrow="Gallery"
-            title="Materials, sites, and details."
-            text="A selection of illustrative photographs. Company project photography will replace these images when it is supplied."
+            title="Products, yard, and installation."
+            text="Photographs from the casting yard and from site installation, grouped with the product they belong to."
           />
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {preview.map((item) => (
               <figure key={item.id}>
-                <Photo
-                  id={item.image}
-                  alt={item.alt}
-                  className="aspect-[4/3] w-full rounded-[28px] object-cover shadow-[0_20px_50px_rgba(0,0,0,0.08)]"
-                  sizes="(min-width: 1024px) 33vw, 50vw"
-                />
-                <figcaption className="mt-2 text-sm text-muted">{item.title} · Illustrative</figcaption>
+                <div className="overflow-hidden rounded-[28px] shadow-[0_20px_50px_rgba(0,0,0,0.08)]">
+                  <Photo
+                    id={item.image}
+                    alt={item.alt}
+                    className="aspect-[4/3] w-full object-cover transition duration-700 hover:scale-[1.03]"
+                    sizes="(min-width: 1024px) 33vw, 50vw"
+                  />
+                </div>
+                <figcaption className="mt-2 text-sm text-muted">{item.title}</figcaption>
               </figure>
             ))}
           </div>

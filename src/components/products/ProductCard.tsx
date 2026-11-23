@@ -1,7 +1,7 @@
 import { motion, useReducedMotion } from "framer-motion"
 import { Link } from "react-router-dom"
 import type { Product } from "@/data/products"
-import { Photo } from "@/components/ui/Photo"
+import { ImageCycle } from "@/components/ui/ImageCycle"
 
 export function ProductCard({ product, index = 0 }: { product: Product; index?: number }) {
   const reduce = useReducedMotion()
@@ -14,14 +14,21 @@ export function ProductCard({ product, index = 0 }: { product: Product; index?: 
       viewport={{ once: true, margin: "0px 0px -40px 0px" }}
       transition={{ duration: 0.5, delay: index * 0.06, ease: [0.22, 1, 0.36, 1] }}
     >
-      <Link to={`/products/${product.slug}`} className="block overflow-hidden rounded-[28px] shadow-[0_24px_60px_rgba(0,0,0,0.10)]" tabIndex={-1} aria-hidden="true">
-        <Photo
-          id={product.image}
+      <Link
+        to={`/products/${product.slug}`}
+        className="block overflow-hidden rounded-[28px] shadow-[0_24px_60px_rgba(0,0,0,0.10)] transition-shadow duration-500 group-hover:shadow-[0_32px_70px_rgba(0,0,0,0.16)]"
+        tabIndex={-1}
+        aria-hidden="true"
+      >
+        <ImageCycle
+          images={product.gallery.length ? product.gallery : [product.image]}
           alt=""
-          className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+          frameClassName="aspect-[4/3]"
+          className="h-full w-full object-cover"
           sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-          width={1200}
-          height={900}
+          interval={6400}
+          startAt={index}
+          showIndex
         />
       </Link>
       <div className="flex flex-1 flex-col px-1 pt-6">

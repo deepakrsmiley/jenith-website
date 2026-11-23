@@ -14,7 +14,14 @@ export function ProductsPage() {
         eyebrow="Products"
         title="Precast and concrete products for the work in front of you."
         text="Each category explains the information a quotation needs. Dimensions, grades, and availability are confirmed during review."
-        image="photo-1493397212122-2b85dda8106b"
+        image="/catalog/walls/installation.jpg"
+        images={[
+          "/catalog/walls/installation.jpg",
+          "/catalog/drains/u-drain-stack.jpg",
+          "/catalog/walls/relief-panels.jpg",
+          "/catalog/precast/poles.jpg",
+          "/catalog/precast/solid-unit-yard.jpg",
+        ]}
       />
       <section className="bg-[#f5f5f7] py-20 md:py-32">
         <div className="mx-auto grid w-full max-w-[1120px] gap-x-8 gap-y-16 px-5 sm:px-8 md:grid-cols-2 xl:grid-cols-3">

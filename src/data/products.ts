@@ -47,11 +47,13 @@ export const products: Product[] = [
       "Compound wall enquiries are reviewed as a panel-and-column system. Share the intended height, panel size, post spacing, and any foundation notes so feasibility can be discussed against the site.",
       "The system is considered for industrial premises, commercial plots, and property boundaries. Final arrangement, finish, and installation scope are confirmed during technical review rather than assumed from a standard catalogue size.",
     ],
-    image: "photo-1493397212122-2b85dda8106b",
+    image: "/catalog/walls/installation.jpg",
     gallery: [
-      "photo-1493397212122-2b85dda8106b",
-      "photo-1511818966892-d7d671e672a2",
-      "photo-1486325212027-8081e485255e",
+      "/catalog/walls/installation.jpg",
+      "/catalog/walls/stone-finish.jpg",
+      "/catalog/walls/panel-yard.jpg",
+      "/catalog/walls/panel-lift.jpg",
+      "/catalog/walls/relief-panels.jpg",
     ],
     parameters: [
       {
@@ -148,10 +150,15 @@ export const products: Product[] = [
     image: "/kerbs/roadside.jpg",
     gallery: [
       "/kerbs/roadside.jpg",
-      "/kerbs/half-batter.jpg",
-      "/kerbs/flush.jpg",
+      "/catalog/kerbs/half-batter.jpg",
       "/kerbs/bullnose.jpg",
+      "/kerbs/flush.jpg",
+      "/catalog/kerbs/dish-channel.jpg",
       "/kerbs/heel.jpg",
+      "/catalog/kerbs/dish-load.jpg",
+      "/catalog/kerbs/half-batter-sheet.jpg",
+      "/catalog/kerbs/bullnose-sheet.jpg",
+      "/catalog/kerbs/flush-sheet.jpg",
     ],
     parameters: [
       { label: "Profile", detail: "Half batter, flush, bullnose, heel, or another named section." },
@@ -165,7 +172,7 @@ export const products: Product[] = [
       {
         name: "Half batter",
         detail: "A sloping face along the road side, used where the kerb has to turn vehicles back toward the carriageway.",
-        image: "/kerbs/half-batter.jpg",
+        image: "/catalog/kerbs/half-batter.jpg",
         sizes: standardKerbSizes,
       },
       {
@@ -189,6 +196,11 @@ export const products: Product[] = [
           { length: "600", width: "75", height: "150" },
         ],
       },
+      {
+        name: "Water dish channel",
+        detail: "A shallow dished channel that carries surface water along an edge.",
+        image: "/catalog/kerbs/dish-channel.jpg",
+      },
     ],
     otherProfiles: [
       { name: "Splay", detail: "A sloped face with a gentler rise from the road than a half batter." },
@@ -202,7 +214,6 @@ export const products: Product[] = [
       { name: "Quadrant", detail: "A quarter-circle unit for a tight corner." },
       { name: "Corner", detail: "A return unit where the edge changes direction." },
       { name: "Crescent", detail: "A curved unit for a radius in the edge." },
-      { name: "Water dish channel", detail: "A shallow channel that carries surface water along the edge." },
     ],
   },
   {
@@ -214,12 +225,8 @@ export const products: Product[] = [
       "U-drain enquiries are reviewed from the internal opening, unit length, wall thickness, and loading the drain must accept. These details come from the civil drawings or the engineer’s brief.",
       "Cover slabs, falls, and connection details should be included when they affect the unit. They are confirmed with the proposal, not taken from a generic schedule.",
     ],
-    image: "photo-1477959858617-67f85cf4f1df",
-    gallery: [
-      "photo-1477959858617-67f85cf4f1df",
-      "photo-1429497419816-9ca5cfb4571a",
-      "photo-1531834685032-c34bf0d84c77",
-    ],
+    image: "/catalog/drains/u-drain-stack.jpg",
+    gallery: ["/catalog/drains/u-drain-stack.jpg"],
     parameters: [
       { label: "Internal opening", detail: "Clear width and depth of the channel." },
       { label: "Length", detail: "Unit length or total run to be supplied." },
@@ -236,8 +243,8 @@ export const products: Product[] = [
       "Chambers are quoted from the internal size, depth, wall thickness, and the pipes or ducts that enter the unit. Send the section and the cover arrangement with the enquiry.",
       "Opening positions, benching, and step irons are taken from the drawing. They are confirmed with the proposal.",
     ],
-    image: "photo-1429497419816-9ca5cfb4571a",
-    gallery: ["photo-1429497419816-9ca5cfb4571a", "photo-1477959858617-67f85cf4f1df", "photo-1531834685032-c34bf0d84c77"],
+    image: "/catalog/chambers/inspection-chamber.jpg",
+    gallery: ["/catalog/chambers/inspection-chamber.jpg"],
     parameters: [
       { label: "Internal size", detail: "Clear length, width, and depth of the chamber." },
       { label: "Wall thickness", detail: "Thickness stated on the drawing or brief." },
@@ -342,14 +349,15 @@ export const products: Product[] = [
     summary:
       "Reinforced concrete components designed around approved drawings and project requirements.",
     description: [
-      "Reinforced precast elements are reviewed from approved drawings. Reinforcement, lifting points, and installation requirements need to be clear before feasibility and a quotation can be discussed.",
+      "Reinforced precast elements are reviewed from approved drawings. The photographs show the kind of unit this category covers: column stubs on foundation pads, pedestals with starter bars, and large solid units with lifting points.",
       "This category covers project elements rather than a fixed product list. If a drawing is still in progress, send the current issue and note what remains to be confirmed.",
     ],
-    image: "photo-1541888946425-d81bb19240f5",
+    image: "/catalog/precast/solid-unit-yard.jpg",
     gallery: [
-      "photo-1541888946425-d81bb19240f5",
-      "photo-1504307651254-35680f356dfd",
-      "photo-1545558014-8692077e9b5c",
+      "/catalog/precast/solid-unit-yard.jpg",
+      "/catalog/precast/column-stubs.jpg",
+      "/catalog/precast/pedestals.jpg",
+      "/catalog/precast/solid-unit-bed.jpg",
     ],
     parameters: [
       { label: "Drawings", detail: "Current approved or issued-for-review drawings." },
@@ -360,20 +368,34 @@ export const products: Product[] = [
     suitableFor: ["Drawing-led elements", "Structural components", "Project-specific units"],
   },
   {
+    slug: "precast-poles",
+    name: "Precast Poles",
+    summary: "Precast concrete poles for fencing lines, yards, and site services.",
+    description: [
+      "Pole enquiries are reviewed from the section, the overall length, and the hole or fitting positions the line needs. The yard photograph shows the I-section poles held in stock.",
+      "Spacing, foundation, and any fence or service loading are confirmed from the drawing during technical review.",
+    ],
+    image: "/catalog/precast/poles.jpg",
+    gallery: ["/catalog/precast/poles.jpg"],
+    parameters: [
+      { label: "Section", detail: "The pole profile shown on the drawing." },
+      { label: "Length", detail: "Overall length of each pole." },
+      { label: "Fittings", detail: "Hole positions, brackets, or other fittings the line requires." },
+      { label: "Quantity", detail: "Number of poles and the delivery location." },
+    ],
+    suitableFor: ["Fencing lines", "Yard boundaries", "Site services"],
+  },
+  {
     slug: "custom-concrete-products",
     name: "Custom Concrete Products",
     summary:
       "Project-specific concrete products based on dimensions, drawings, technical requirements, and feasibility.",
     description: [
-      "Custom products are considered when the requirement does not sit in a standard category. Dimensions, drawings, technical requirements, and site constraints are reviewed together for feasibility.",
+      "Custom products are considered when the requirement does not sit in a standard category. Relief patterns and stone-face panels are typical of the architectural finishes reviewed here. Dimensions, drawings, technical requirements, and site constraints are taken together for feasibility.",
       "A custom enquiry can still result in a recommendation to use one of the principal categories. That decision is made during technical review and explained in the proposal.",
     ],
-    image: "photo-1503387762-592deb58ef4e",
-    gallery: [
-      "photo-1503387762-592deb58ef4e",
-      "photo-1565008447742-97f6f38c985c",
-      "photo-1460317442991-0ec209397118",
-    ],
+    image: "/catalog/walls/relief-panels.jpg",
+    gallery: ["/catalog/walls/relief-panels.jpg", "/catalog/walls/stone-finish.jpg"],
     parameters: [
       { label: "Drawings", detail: "Sketches or drawings showing the required product." },
       { label: "Dimensions", detail: "Critical sizes, tolerances if stated, and quantity." },

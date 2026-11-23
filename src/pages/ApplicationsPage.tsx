@@ -13,8 +13,14 @@ export function ApplicationsPage() {
       <PageHero
         eyebrow="Applications"
         title="Settings where the products are commonly considered."
-        text="These scenes show the kind of work the catalogue can support. They are illustrative photographs, not a record of NEXCON projects."
-        image="photo-1486406146926-c627a92ad1ab"
+        text="These photographs show the products in the yard and during installation, across the kinds of work the catalogue supports."
+        image="/catalog/walls/installation.jpg"
+        images={[
+          "/catalog/walls/installation.jpg",
+          "/catalog/precast/column-stubs.jpg",
+          "/catalog/drains/u-drain-stack.jpg",
+          "/catalog/walls/panel-lift.jpg",
+        ]}
       />
       <section className="bg-white py-16 md:py-24">
         <div className="mx-auto w-full max-w-[1120px] px-5 sm:px-8">

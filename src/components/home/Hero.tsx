@@ -1,8 +1,9 @@
 import { useEffect, useRef } from "react"
 import { motion, useReducedMotion } from "framer-motion"
+import { heroFrames } from "@/data/gallery"
 import { credibility } from "@/data/site"
 import { Button } from "@/components/ui/Button"
-import { Photo } from "@/components/ui/Photo"
+import { ImageCycle } from "@/components/ui/ImageCycle"
 import { useHeaderHeight } from "@/components/layout/Layout"
 
 export function Hero() {
@@ -38,11 +39,13 @@ export function Hero() {
   return (
     <section className="relative flex min-h-svh flex-col overflow-hidden bg-navy text-white">
       <div ref={imageRef} className="absolute inset-x-0 -top-16 h-[120%]">
-        <Photo
-          id="photo-1487958449943-2429e8be8625"
-          alt="Illustrative photograph of a concrete architectural facade."
+        <ImageCycle
+          images={heroFrames}
+          alt="NEXCON precast concrete products, in the yard and during installation."
           priority
-          className="hero-zoom h-full w-full object-cover"
+          frameClassName="h-full w-full"
+          className="h-full w-full object-cover"
+          interval={6800}
           sizes="100vw"
         />
       </div>

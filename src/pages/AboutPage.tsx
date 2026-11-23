@@ -17,7 +17,8 @@ export function AboutPage() {
         eyebrow="About Us"
         title="Building trust through concrete expertise."
         text={company.introduction}
-        image="photo-1511818966892-d7d671e672a2"
+        image="/catalog/precast/solid-unit-yard.jpg"
+        images={["/catalog/precast/solid-unit-yard.jpg", "/catalog/walls/panel-yard.jpg", "/catalog/precast/pedestals.jpg"]}
       />
       <section className="bg-white py-20 md:py-28">
         <div className="mx-auto grid w-full max-w-[1120px] gap-12 px-5 sm:px-8 lg:grid-cols-[1.1fr_0.9fr]">
@@ -49,12 +50,12 @@ export function AboutPage() {
           </div>
           <div>
             <Photo
-              id="photo-1503387762-592deb58ef4e"
-              alt="Illustrative photograph of construction drawings under review."
+              id="/catalog/walls/panel-yard.jpg"
+              alt="Precast compound wall columns and panels stored in the yard."
               className="aspect-[4/5] w-full rounded-[28px] object-cover"
               sizes="(min-width: 1024px) 40vw, 100vw"
             />
-            <p className="mt-3 text-[12px] text-muted">Illustrative photography</p>
+            <p className="mt-3 text-[12px] text-muted">Casting yard</p>
           </div>
         </div>
       </section>
