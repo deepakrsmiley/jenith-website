@@ -25,7 +25,9 @@ export const galleryFilters: { id: "all" | GalleryCategory; label: string }[] = 
 
 export const heroFrames = [
   "/catalog/walls/installation.jpg",
-  "/catalog/drains/u-drain-stack.jpg",
+  "/catalog/walls/retaining-trench.jpg",
+  "/catalog/drains/u-drain-covers.jpg",
+  "/catalog/tanks/water-tank-lift.jpg",
   "/catalog/walls/relief-panels.jpg",
   "/catalog/precast/solid-unit-yard.jpg",
   "/catalog/walls/panel-lift.jpg",
@@ -33,6 +35,8 @@ export const heroFrames = [
 ]
 
 export const introFrames = [
+  "/catalog/blocks/solid-block-side.jpg",
+  "/catalog/kerbs/dish-unit.jpg",
   "/catalog/walls/panel-yard.jpg",
   "/catalog/precast/column-stubs.jpg",
   "/catalog/walls/stone-finish.jpg",
@@ -41,6 +45,62 @@ export const introFrames = [
 ]
 
 export const galleryItems: GalleryItem[] = [
+  {
+    id: "solid-block-side",
+    title: "Solid concrete block",
+    image: "/catalog/blocks/solid-block-side.jpg",
+    category: "closeups",
+    aspect: "wide",
+    alt: "Grey solid concrete block with an open surface texture, shown from the side.",
+  },
+  {
+    id: "solid-block-top",
+    title: "Solid block, top face",
+    image: "/catalog/blocks/solid-block-top.jpg",
+    category: "products",
+    aspect: "square",
+    alt: "Top face of a grey solid concrete block.",
+  },
+  {
+    id: "retaining-trench",
+    title: "Retaining wall in place",
+    image: "/catalog/walls/retaining-trench.jpg",
+    category: "construction",
+    aspect: "wide",
+    alt: "L-shaped precast retaining wall panels set along an excavated site.",
+  },
+  {
+    id: "retaining-run",
+    title: "Retaining wall run",
+    image: "/catalog/walls/retaining-run.jpg",
+    category: "construction",
+    aspect: "tall",
+    alt: "A long run of precast L-shaped retaining wall panels on a prepared base.",
+  },
+  {
+    id: "dish-unit",
+    title: "Dish channel unit",
+    image: "/catalog/kerbs/dish-unit.jpg",
+    category: "products",
+    aspect: "wide",
+    alt: "Precast concrete water dish channel with a shallow dished top.",
+  },
+  {
+    id: "water-tank-lift",
+    title: "Precast water tank",
+    image: "/catalog/tanks/water-tank-lift.jpg",
+    category: "manufacturing",
+    aspect: "wide",
+    alt: "A rectangular precast concrete water tank suspended from lifting chains.",
+  },
+  {
+    id: "u-drain-covers",
+    title: "U-drain with cover slabs",
+    image: "/catalog/drains/u-drain-covers.jpg",
+    category: "infrastructure",
+    aspect: "wide",
+    alt: "Precast U-drain channel with patterned cover slabs over part of the opening.",
+  },
   {
     id: "wall-installation",
     title: "Compound wall installation",

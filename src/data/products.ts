@@ -84,12 +84,8 @@ export const products: Product[] = [
       "Solid blocks are offered in three widths. Each size below is length × width × height in millimetres. The inch name is the width.",
       "Hollow blocks are quoted against the dimensions, strength class, density, and quantity stated for the project. Strength class and density are confirmed with the proposal.",
     ],
-    image: "photo-1518005020951-eccb494ad742",
-    gallery: [
-      "photo-1518005020951-eccb494ad742",
-      "photo-1479839672679-a46483c0e7c8",
-      "photo-1448630360428-65456885c650",
-    ],
+    image: "/catalog/blocks/solid-block-side.jpg",
+    gallery: ["/catalog/blocks/solid-block-side.jpg", "/catalog/blocks/solid-block-top.jpg"],
     parameters: [
       { label: "Dimensions", detail: "Length, width, and height required." },
       { label: "Strength class", detail: "The class specified for the application." },
@@ -153,6 +149,7 @@ export const products: Product[] = [
       "/catalog/kerbs/half-batter.jpg",
       "/kerbs/bullnose.jpg",
       "/kerbs/flush.jpg",
+      "/catalog/kerbs/dish-unit.jpg",
       "/catalog/kerbs/dish-channel.jpg",
       "/kerbs/heel.jpg",
       "/catalog/kerbs/dish-load.jpg",
@@ -199,7 +196,7 @@ export const products: Product[] = [
       {
         name: "Water dish channel",
         detail: "A shallow dished channel that carries surface water along an edge.",
-        image: "/catalog/kerbs/dish-channel.jpg",
+        image: "/catalog/kerbs/dish-unit.jpg",
       },
     ],
     otherProfiles: [
@@ -225,8 +222,8 @@ export const products: Product[] = [
       "U-drain enquiries are reviewed from the internal opening, unit length, wall thickness, and loading the drain must accept. These details come from the civil drawings or the engineer’s brief.",
       "Cover slabs, falls, and connection details should be included when they affect the unit. They are confirmed with the proposal, not taken from a generic schedule.",
     ],
-    image: "/catalog/drains/u-drain-stack.jpg",
-    gallery: ["/catalog/drains/u-drain-stack.jpg"],
+    image: "/catalog/drains/u-drain-covers.jpg",
+    gallery: ["/catalog/drains/u-drain-covers.jpg", "/catalog/drains/u-drain-stack.jpg"],
     parameters: [
       { label: "Internal opening", detail: "Clear width and depth of the channel." },
       { label: "Length", detail: "Unit length or total run to be supplied." },
@@ -261,8 +258,8 @@ export const products: Product[] = [
       "Tank enquiries need the capacity or internal dimensions, whether the tank is above or below ground, and the inlet, outlet, and overflow positions.",
       "Wall thickness, base, cover, and any divider walls are taken from the drawing. Waterproofing and exposure are confirmed during review.",
     ],
-    image: "photo-1460317442991-0ec209397118",
-    gallery: ["photo-1460317442991-0ec209397118", "photo-1565008447742-97f6f38c985c", "photo-1503387762-592deb58ef4e"],
+    image: "/catalog/tanks/water-tank-lift.jpg",
+    gallery: ["/catalog/tanks/water-tank-lift.jpg"],
     parameters: [
       { label: "Capacity", detail: "Stored volume, or the internal dimensions that set it." },
       { label: "Arrangement", detail: "Above ground or below ground, and any divider walls." },
@@ -279,8 +276,8 @@ export const products: Product[] = [
       "Retaining walls are reviewed from the retained height, the surcharge behind the wall, and the ground conditions. Panel length and thickness come from the drawing.",
       "Drainage behind the wall, the toe or base, and how units connect should be included when they are already decided.",
     ],
-    image: "photo-1486325212027-8081e485255e",
-    gallery: ["photo-1486325212027-8081e485255e", "photo-1493397212122-2b85dda8106b", "photo-1511818966892-d7d671e672a2"],
+    image: "/catalog/walls/retaining-trench.jpg",
+    gallery: ["/catalog/walls/retaining-trench.jpg", "/catalog/walls/retaining-run.jpg"],
     parameters: [
       { label: "Retained height", detail: "Height of soil or fill the wall has to hold." },
       { label: "Surcharge", detail: "Load on the ground behind the wall, if known." },
@@ -333,8 +330,8 @@ export const products: Product[] = [
       "Cover slabs are reviewed from the clear opening they span, the slab thickness, and the load the slab must accept. Bearing on the supporting walls should be shown on the drawing.",
       "Lifting points and any access opening in the slab are confirmed with the proposal.",
     ],
-    image: "photo-1545558014-8692077e9b5c",
-    gallery: ["photo-1545558014-8692077e9b5c", "photo-1503387762-592deb58ef4e", "photo-1541888946425-d81bb19240f5"],
+    image: "/catalog/drains/u-drain-covers.jpg",
+    gallery: ["/catalog/drains/u-drain-covers.jpg"],
     parameters: [
       { label: "Opening", detail: "Clear span and width the slab has to cover." },
       { label: "Thickness", detail: "Slab thickness stated on the drawing." },

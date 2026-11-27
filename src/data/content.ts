@@ -135,7 +135,7 @@ export const applications = [
     slug: "drainage",
     title: "Drainage and civil engineering",
     caption: "Precast U-drains and related components reviewed from civil drawings.",
-    image: "/catalog/drains/u-drain-stack.jpg",
+    image: "/catalog/drains/u-drain-covers.jpg",
   },
   {
     slug: "landscaping",

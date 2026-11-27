@@ -17,10 +17,11 @@ export function ProductsPage() {
         image="/catalog/walls/installation.jpg"
         images={[
           "/catalog/walls/installation.jpg",
-          "/catalog/drains/u-drain-stack.jpg",
-          "/catalog/walls/relief-panels.jpg",
+          "/catalog/walls/retaining-trench.jpg",
+          "/catalog/drains/u-drain-covers.jpg",
+          "/catalog/tanks/water-tank-lift.jpg",
+          "/catalog/blocks/solid-block-side.jpg",
           "/catalog/precast/poles.jpg",
-          "/catalog/precast/solid-unit-yard.jpg",
         ]}
       />
       <section className="bg-[#f5f5f7] py-20 md:py-32">

@@ -16,9 +16,10 @@ export function GalleryPage() {
         image="/catalog/walls/stone-finish.jpg"
         images={[
           "/catalog/walls/stone-finish.jpg",
-          "/catalog/walls/panel-yard.jpg",
-          "/catalog/precast/pedestals.jpg",
-          "/catalog/chambers/inspection-chamber.jpg",
+          "/catalog/walls/retaining-run.jpg",
+          "/catalog/tanks/water-tank-lift.jpg",
+          "/catalog/kerbs/dish-unit.jpg",
+          "/catalog/blocks/solid-block-top.jpg",
         ]}
       />
       <section className="bg-mist py-16 md:py-24">

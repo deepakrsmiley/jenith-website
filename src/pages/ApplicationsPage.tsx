@@ -17,9 +17,9 @@ export function ApplicationsPage() {
         image="/catalog/walls/installation.jpg"
         images={[
           "/catalog/walls/installation.jpg",
-          "/catalog/precast/column-stubs.jpg",
-          "/catalog/drains/u-drain-stack.jpg",
-          "/catalog/walls/panel-lift.jpg",
+          "/catalog/walls/retaining-trench.jpg",
+          "/catalog/drains/u-drain-covers.jpg",
+          "/catalog/tanks/water-tank-lift.jpg",
         ]}
       />
       <section className="bg-white py-16 md:py-24">
