@@ -152,7 +152,6 @@ export const products: Product[] = [
       "/catalog/kerbs/dish-unit.jpg",
       "/catalog/kerbs/dish-channel.jpg",
       "/kerbs/heel.jpg",
-      "/catalog/kerbs/dish-load.jpg",
       "/catalog/kerbs/half-batter-sheet.jpg",
       "/catalog/kerbs/bullnose-sheet.jpg",
       "/catalog/kerbs/flush-sheet.jpg",
@@ -354,7 +353,6 @@ export const products: Product[] = [
       "/catalog/precast/solid-unit-yard.jpg",
       "/catalog/precast/column-stubs.jpg",
       "/catalog/precast/pedestals.jpg",
-      "/catalog/precast/solid-unit-bed.jpg",
     ],
     parameters: [
       { label: "Drawings", detail: "Current approved or issued-for-review drawings." },

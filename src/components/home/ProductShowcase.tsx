@@ -4,7 +4,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading"
 
 export function ProductShowcase() {
   return (
-    <section id="products" className="bg-[#f5f5f7] py-24 md:py-36">
+    <section id="products" className="bg-[#f3efe8] py-24 md:py-36">
       <div className="mx-auto w-full max-w-[1120px] px-5 sm:px-8">
         <SectionHeading
           eyebrow="Products"

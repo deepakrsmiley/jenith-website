@@ -7,15 +7,15 @@ export function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="bg-black text-white">
-      <div className="mx-auto grid w-full max-w-[980px] gap-12 px-6 py-20 sm:px-8 md:grid-cols-2 lg:grid-cols-4">
+    <footer className="bg-[#14110e] text-white">
+      <div className="mx-auto grid w-full max-w-[1120px] gap-14 px-6 py-20 sm:px-8 md:grid-cols-2 lg:grid-cols-4 lg:py-24">
         <div>
           <Logo tone="light" compact />
-          <p className="mt-5 max-w-xs text-[12px] leading-relaxed text-white/50">{company.introduction}</p>
+          <p className="mt-6 max-w-xs text-[13px] leading-relaxed font-light text-white/55">{company.introduction}</p>
         </div>
 
         <div>
-          <h2 className="text-[12px] font-medium text-white">Navigate</h2>
+          <h2 className="text-[11px] font-medium uppercase tracking-[0.22em] text-[#c4a574]">Navigate</h2>
           <ul className="mt-4 space-y-2.5">
             {navItems.map((item) => (
               <li key={item.to}>
@@ -33,7 +33,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h2 className="text-[12px] font-medium text-white">Products</h2>
+          <h2 className="text-[11px] font-medium uppercase tracking-[0.22em] text-[#c4a574]">Products</h2>
           <ul className="mt-4 space-y-2.5">
             {products.map((product) => (
               <li key={product.slug}>
@@ -46,7 +46,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h2 className="text-[12px] font-medium text-white">Contact</h2>
+          <h2 className="text-[11px] font-medium uppercase tracking-[0.22em] text-[#c4a574]">Contact</h2>
           <ul className="mt-4 space-y-3">
             {contactChannels.map((channel) => (
               <li key={channel.label}>
@@ -61,7 +61,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10">
+      <div className="border-t border-[#c4a574]/25">
         <div className="mx-auto flex w-full max-w-[980px] flex-col gap-2 px-6 py-5 text-[12px] text-white/40 sm:flex-row sm:items-center sm:justify-between sm:px-8">
           <p>Copyright © {year} {company.name}. All rights reserved.</p>
           <Link to="/privacy" className="hover:text-white">

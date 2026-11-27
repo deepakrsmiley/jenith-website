@@ -24,7 +24,7 @@ export function ProductsPage() {
           "/catalog/precast/poles.jpg",
         ]}
       />
-      <section className="bg-[#f5f5f7] py-20 md:py-32">
+      <section className="bg-[#f3efe8] py-20 md:py-32">
         <div className="mx-auto grid w-full max-w-[1120px] gap-x-8 gap-y-16 px-5 sm:px-8 md:grid-cols-2 xl:grid-cols-3">
           {products.map((product, index) => (
             <ProductCard key={product.slug} product={product} index={index} />

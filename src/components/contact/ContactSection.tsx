@@ -2,9 +2,9 @@ import { QuoteForm } from "@/components/quote/QuoteForm"
 
 export function ContactSection() {
   return (
-    <section id="contact" className="bg-[#f5f5f7] py-24 md:py-32">
+    <section id="contact" className="bg-[#f3efe8] py-24 md:py-32">
       <div className="mx-auto w-full max-w-[680px] px-5 sm:px-8">
-        <p className="text-[12px] font-medium tracking-[0.04em] text-teal">Quotation</p>
+        <p className="text-[11px] font-medium uppercase tracking-[0.28em] text-teal">Quotation</p>
         <h2 className="mt-3 text-[40px] leading-[1.05] font-semibold tracking-[-0.04em] text-ink md:text-[52px]">
           Request a quotation.
         </h2>

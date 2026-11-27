@@ -49,7 +49,7 @@ export function TechnicalExplorer() {
               aria-selected={selected}
               aria-controls={`panel-${group.id}`}
               tabIndex={selected ? 0 : -1}
-              className={`h-9 shrink-0 rounded-full px-4 text-[13px] font-medium ${selected ? "bg-ink text-white" : "bg-[#e8e8ed] text-muted"}`}
+              className={`h-9 shrink-0 px-4 text-[11px] font-medium uppercase tracking-[0.16em] ${selected ? "bg-ink text-[#faf7f2]" : "bg-[#ebe4da] text-muted"}`}
               onClick={() => setActiveId(group.id)}
             >
               {group.title}
@@ -91,7 +91,7 @@ export function TechnicalExplorer() {
         <p className="mt-3 max-w-3xl text-muted">
           The table lists the information each product group needs. It does not state tested values or compliance with a standard.
         </p>
-        <div className="mt-6 overflow-x-auto rounded-[22px] bg-white">
+        <div className="mt-6 overflow-x-auto rounded-sm bg-white">
           <table className="w-full min-w-[760px] border-collapse text-left text-sm">
             <caption className="sr-only">Enquiry parameters compared across product groups</caption>
             <thead className="bg-mist text-navy">
@@ -124,7 +124,7 @@ export function TechnicalExplorer() {
         </div>
       </div>
 
-      <div id="documents" className="mt-12 rounded-[28px] bg-[#f5f5f7] p-6 sm:p-8">
+      <div id="documents" className="mt-12 rounded-sm bg-[#f3efe8] p-6 sm:p-8">
         <h3 className="text-2xl text-ink">Technical documents</h3>
         {technicalDocuments.length === 0 ? (
           <p className="mt-3 max-w-3xl text-muted">

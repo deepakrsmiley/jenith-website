@@ -22,7 +22,7 @@ export class ErrorBoundary extends Component<Props, State> {
           <p className="mt-4 text-muted">Reload the page. If it continues, the last change on this screen needs a correction.</p>
           <button
             type="button"
-            className="mt-6 inline-flex h-11 items-center rounded-full bg-ink px-5 text-[14px] font-medium text-white"
+            className="mt-6 inline-flex h-12 items-center bg-ink px-6 text-[11px] font-medium uppercase tracking-[0.18em] text-[#faf7f2]"
             onClick={() => window.location.reload()}
           >
             Reload

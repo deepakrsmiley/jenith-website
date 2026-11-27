@@ -60,7 +60,7 @@ export function ImageCycle({
 
   return (
     <div
-      className={`relative overflow-hidden bg-[#e7e7ea] ${frameClassName}`}
+      className={`relative overflow-hidden bg-[#e6e0d6] ${frameClassName}`}
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
@@ -90,7 +90,7 @@ export function ImageCycle({
         </motion.div>
       </AnimatePresence>
       {showIndex && count > 1 ? (
-        <span className="pointer-events-none absolute right-3 bottom-3 z-10 rounded-full bg-black/45 px-2.5 py-1 text-[11px] font-medium tracking-[0.16em] text-white backdrop-blur-md">
+        <span className="pointer-events-none absolute right-3 bottom-3 z-10 bg-black/50 px-2.5 py-1 text-[10px] font-medium tracking-[0.2em] text-white backdrop-blur-md">
           {String(index + 1).padStart(2, "0")} / {String(count).padStart(2, "0")}
         </span>
       ) : null}

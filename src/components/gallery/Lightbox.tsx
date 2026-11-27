@@ -53,7 +53,7 @@ export function Lightbox({ items, index, onClose, onIndex }: LightboxProps) {
           <Photo
             id={item.image}
             alt={item.alt}
-            className="mt-4 max-h-[72svh] w-full rounded-[22px] object-contain"
+            className="mt-4 max-h-[72svh] w-full rounded-sm object-contain"
             sizes="(min-width: 1024px) 80vw, 100vw"
             width={1600}
             height={1066}

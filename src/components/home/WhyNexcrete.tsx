@@ -5,7 +5,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading"
 
 export function WhyNexcrete() {
   return (
-    <section id="why" className="bg-black py-28 text-white md:py-40">
+    <section id="why" className="bg-[#14110e] py-28 text-white md:py-40">
       <div className="mx-auto w-full max-w-[1120px] px-5 sm:px-8">
         <SectionHeading
           invert
@@ -20,7 +20,7 @@ export function WhyNexcrete() {
                 <span className="text-teal">
                   <LineIcon name={item.icon} />
                 </span>
-                <h3 className="mt-5 text-[21px] font-semibold tracking-[-0.02em] text-white">{item.title}</h3>
+                <h3 className="mt-5 font-display text-[28px] font-medium text-white">{item.title}</h3>
                 <p className="mt-2 text-[15px] leading-snug text-white/70">{item.text}</p>
               </article>
             </Reveal>

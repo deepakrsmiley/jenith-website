@@ -37,7 +37,7 @@ export function AboutPage() {
             </div>
             <ul className="mt-8 flex flex-wrap gap-2">
               {audiences.map((audience) => (
-                <li key={audience} className="rounded-full bg-[#e8e8ed] px-4 py-2 text-[13px] font-medium text-ink">
+                <li key={audience} className="rounded-full bg-[#ebe4da] px-4 py-2 text-[13px] font-medium text-ink">
                   {audience}
                 </li>
               ))}
@@ -52,7 +52,7 @@ export function AboutPage() {
             <Photo
               id="/catalog/walls/panel-yard.jpg"
               alt="Precast compound wall columns and panels stored in the yard."
-              className="aspect-[4/5] w-full rounded-[28px] object-cover"
+              className="aspect-[4/5] w-full rounded-sm object-cover"
               sizes="(min-width: 1024px) 40vw, 100vw"
             />
             <p className="mt-3 text-[12px] text-muted">Casting yard</p>
@@ -62,7 +62,7 @@ export function AboutPage() {
       <section className="bg-mist py-16">
         <div className="mx-auto grid w-full max-w-[1120px] gap-6 px-5 sm:grid-cols-2 sm:px-8">
           {benefits.map((benefit) => (
-            <article key={benefit.number} className="rounded-[22px] bg-white p-6">
+            <article key={benefit.number} className="rounded-sm bg-white p-6">
               <p className="text-[13px] font-medium text-teal">{benefit.number}</p>
               <h2 className="mt-3 text-xl text-ink">{benefit.title}</h2>
               <p className="mt-2 text-muted">{benefit.text}</p>

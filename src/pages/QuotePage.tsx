@@ -8,9 +8,9 @@ export function QuotePage() {
         title="Request a Quote | nexconprecast"
         description="Request a nexconprecast quotation with product details, quantity, delivery location, and any drawings."
       />
-      <section className="bg-[#f5f5f7] px-5 py-16 sm:px-8 md:py-24">
+      <section className="bg-[#f3efe8] px-5 py-16 sm:px-8 md:py-24">
         <div className="mx-auto w-full max-w-[680px]">
-          <p className="text-[12px] font-medium tracking-[0.04em] text-teal">Quotation</p>
+          <p className="text-[11px] font-medium uppercase tracking-[0.28em] text-teal">Quotation</p>
           <h1 className="mt-3 text-[40px] leading-[1.05] font-semibold tracking-[-0.04em] text-ink md:text-[56px]">
             Request a quotation.
           </h1>

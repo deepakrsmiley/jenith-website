@@ -26,7 +26,7 @@ export function Photo({
   if (failed) {
     return (
       <div
-        className={`flex items-end rounded-[22px] bg-[#1d1d1f] p-4 text-[12px] text-white/70 ${className}`}
+        className={`flex items-end rounded-sm bg-[#1d1d1f] p-4 text-[12px] text-white/70 ${className}`}
         role="img"
         aria-label={alt}
       >

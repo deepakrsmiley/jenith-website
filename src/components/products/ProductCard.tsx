@@ -16,7 +16,7 @@ export function ProductCard({ product, index = 0 }: { product: Product; index?: 
     >
       <Link
         to={`/products/${product.slug}`}
-        className="block overflow-hidden rounded-[28px] shadow-[0_24px_60px_rgba(0,0,0,0.10)] transition-shadow duration-500 group-hover:shadow-[0_32px_70px_rgba(0,0,0,0.16)]"
+        className="block overflow-hidden rounded-sm bg-[#e6e0d6] shadow-[0_18px_50px_rgba(28,24,20,0.08)] ring-1 ring-black/5 transition duration-700 group-hover:-translate-y-1 group-hover:shadow-[0_28px_60px_rgba(28,24,20,0.14)]"
         tabIndex={-1}
         aria-hidden="true"
       >
@@ -32,14 +32,14 @@ export function ProductCard({ product, index = 0 }: { product: Product; index?: 
         />
       </Link>
       <div className="flex flex-1 flex-col px-1 pt-6">
-        <h3 className="text-[19px] font-semibold tracking-[-0.03em] text-ink">
+        <h3 className="font-display text-[28px] font-medium text-ink">
           <Link to={`/products/${product.slug}`} className="hover:text-teal">
             {product.name}
           </Link>
         </h3>
-        <p className="mt-2 flex-1 text-[14px] leading-[1.5] text-muted">{product.summary}</p>
-        <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2">
-          <Link to={`/products/${product.slug}`} className="inline-flex min-h-11 items-center text-[14px] font-medium text-teal">
+        <p className="mt-2 flex-1 text-[14px] leading-[1.6] font-light text-muted">{product.summary}</p>
+        <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2">
+          <Link to={`/products/${product.slug}`} className="inline-flex min-h-11 items-center text-[11px] font-medium uppercase tracking-[0.18em] text-teal">
             View details
           </Link>
           <Link to={`/quote?product=${product.slug}`} className="inline-flex min-h-11 items-center text-[14px] text-ink/70 hover:text-ink">

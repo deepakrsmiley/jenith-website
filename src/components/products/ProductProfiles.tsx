@@ -8,7 +8,7 @@ export function ProductProfiles({ product }: { product: Product }) {
   if (profiles.length === 0 && others.length === 0 && finishes.length === 0) return null
 
   return (
-    <section className="bg-[#f5f5f7] py-16 md:py-24">
+    <section className="bg-[#f3efe8] py-16 md:py-24">
       <div className="mx-auto w-full max-w-[1120px] px-5 sm:px-8">
         {profiles.length > 0 ? (
           <>
@@ -27,7 +27,7 @@ export function ProductProfiles({ product }: { product: Product }) {
                     className={
                       catalog
                         ? "overflow-hidden rounded-2xl border border-[#e6d7c3] bg-[#fbf6ee]"
-                        : "overflow-hidden rounded-[28px] bg-white shadow-[0_24px_60px_rgba(0,0,0,0.06)]"
+                        : "overflow-hidden rounded-sm bg-white shadow-[0_24px_60px_rgba(0,0,0,0.06)]"
                     }
                   >
                     {profile.image ? (
@@ -89,7 +89,7 @@ export function ProductProfiles({ product }: { product: Product }) {
             </p>
             <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {others.map((profile) => (
-                <li key={profile.name} className="rounded-[22px] bg-white p-5">
+                <li key={profile.name} className="rounded-sm bg-white p-5">
                   <h3 className="text-[17px] text-ink">{profile.name}</h3>
                   <p className="mt-2 text-[14px] leading-relaxed text-muted">{profile.detail}</p>
                 </li>

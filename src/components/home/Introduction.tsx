@@ -15,7 +15,7 @@ export function Introduction() {
             <ImageCycle
               images={introFrames}
               alt="Precast wall panels, columns, and chambers."
-              frameClassName="aspect-[4/5] w-full rounded-[32px] shadow-[0_30px_80px_rgba(0,0,0,0.12)] sm:aspect-[5/4]"
+              frameClassName="aspect-[4/5] w-full rounded-sm shadow-[0_30px_80px_rgba(28,24,20,0.14)] sm:aspect-[5/4]"
               className="h-full w-full object-cover"
               sizes="(min-width: 1024px) 50vw, 100vw"
               interval={6200}

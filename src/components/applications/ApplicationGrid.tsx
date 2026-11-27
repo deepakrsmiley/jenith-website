@@ -7,7 +7,7 @@ export function ApplicationGrid({ variant = "preview" }: { variant?: "preview" |
     <div className={`grid gap-4 ${variant === "full" ? "md:grid-cols-2" : "sm:grid-cols-2 lg:grid-cols-3"}`}>
       {applications.map((item, index) => (
         <Reveal key={item.slug} delay={index * 0.05}>
-          <article className="group overflow-hidden rounded-[22px] bg-black">
+          <article className="group overflow-hidden rounded-sm bg-black">
             <div className="relative">
             <Photo
               id={item.image}
@@ -17,7 +17,7 @@ export function ApplicationGrid({ variant = "preview" }: { variant?: "preview" |
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
             <div className="absolute inset-x-0 bottom-0 p-5 text-white">
-              <h3 className="text-[21px] font-semibold tracking-[-0.02em] text-white">{item.title}</h3>
+              <h3 className="font-display text-[28px] font-medium text-white">{item.title}</h3>
               <p className="mt-1 text-[14px] leading-snug text-white/80">{item.caption}</p>
             </div>
             </div>

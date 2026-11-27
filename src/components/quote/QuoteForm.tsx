@@ -54,7 +54,7 @@ function todayIso() {
 }
 
 function fieldClass(invalid: boolean) {
-  return `mt-2 w-full rounded-2xl border bg-[#f5f5f7] px-4 py-3.5 text-[17px] text-ink outline-none transition-colors ${
+  return `mt-2 w-full rounded-sm border bg-[#f3efe8] px-4 py-3.5 text-[16px] text-ink outline-none transition-colors ${
     invalid ? "border-[#9b2c2c] bg-white" : "border-transparent focus:border-ink focus:bg-white"
   }`
 }
@@ -137,7 +137,7 @@ export function QuoteForm() {
 
   if (result?.status === "demo" || result?.status === "sent") {
     return (
-      <div className="rounded-[32px] bg-white px-7 py-14 text-center shadow-[0_30px_80px_rgba(0,0,0,0.08)] sm:px-12">
+      <div className="rounded-sm bg-white px-7 py-14 text-center shadow-[0_30px_80px_rgba(0,0,0,0.08)] sm:px-12">
         <p className="text-[12px] font-medium text-teal">Request noted</p>
         <h2 ref={headingRef} tabIndex={-1} className="mt-3 text-[36px] leading-[1.05] font-semibold tracking-[-0.04em] text-ink outline-none">
           Thank you. We have your details.
@@ -150,7 +150,7 @@ export function QuoteForm() {
         </p>
         <button
           type="button"
-          className="mt-8 inline-flex h-11 items-center rounded-full bg-ink px-6 text-[14px] font-medium text-white"
+          className="mt-8 inline-flex h-12 items-center bg-ink px-6 text-[11px] font-medium uppercase tracking-[0.18em] text-[#faf7f2]"
           onClick={() => setResult(null)}
         >
           Send another request
@@ -160,14 +160,14 @@ export function QuoteForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} noValidate className="rounded-[32px] bg-white px-6 py-7 shadow-[0_30px_80px_rgba(0,0,0,0.08)] sm:px-8 sm:py-9">
+    <form onSubmit={onSubmit} noValidate className="rounded-sm bg-white px-6 py-7 shadow-[0_30px_80px_rgba(0,0,0,0.08)] sm:px-8 sm:py-9">
       <div className="flex items-center justify-between gap-4">
         <p className="text-[13px] font-medium text-muted">
           Step {step + 1} of {steps.length}
         </p>
         <p className="text-[13px] text-muted">{current.title}</p>
       </div>
-      <div className="mt-3 h-1 overflow-hidden rounded-full bg-[#e8e8ed]" aria-hidden="true">
+      <div className="mt-3 h-1 overflow-hidden rounded-full bg-[#ebe4da]" aria-hidden="true">
         <div className="h-full rounded-full bg-ink transition-[width] duration-300" style={{ width: `${((step + 1) / steps.length) * 100}%` }} />
       </div>
 
@@ -256,8 +256,8 @@ export function QuoteForm() {
                     key={category.value}
                     type="button"
                     aria-pressed={selected}
-                    className={`rounded-2xl px-4 py-3 text-left text-[15px] leading-snug transition-colors ${
-                      selected ? "bg-ink text-white" : "bg-[#f5f5f7] text-ink hover:bg-[#e8e8ed]"
+                    className={`rounded-sm px-4 py-3 text-left text-[15px] leading-snug transition-colors ${
+                      selected ? "bg-ink text-white" : "bg-[#f3efe8] text-ink hover:bg-[#ebe4da]"
                     }`}
                     onClick={() => update("productCategory", category.value)}
                   >
@@ -319,7 +319,7 @@ export function QuoteForm() {
             <p className="mt-0.5 text-[12px] text-muted">Optional. PDF, image, DWG, or DXF up to 10 MB.</p>
             <button
               type="button"
-              className="mt-2 flex min-h-14 w-full items-center justify-center rounded-2xl bg-[#f5f5f7] px-4 text-[15px] text-ink"
+              className="mt-2 flex min-h-14 w-full items-center justify-center rounded-2xl bg-[#f3efe8] px-4 text-[15px] text-ink"
               onClick={() => fileRef.current?.click()}
             >
               {file ? file.name : "Add a file"}
@@ -351,7 +351,7 @@ export function QuoteForm() {
             {errors.file ? <p className="mt-2 text-[13px] text-[#9b2c2c]">{errors.file}</p> : null}
             {!live ? <p className="mt-2 text-[12px] text-muted">In this preview the file stays on your device.</p> : null}
           </div>
-          <label className="flex items-start gap-3 rounded-2xl bg-[#f5f5f7] px-4 py-4 text-[14px] leading-relaxed text-ink">
+          <label className="flex items-start gap-3 rounded-2xl bg-[#f3efe8] px-4 py-4 text-[14px] leading-relaxed text-ink">
             <input
               type="checkbox"
               className="mt-0.5 h-5 w-5 accent-ink"
@@ -384,13 +384,13 @@ export function QuoteForm() {
           <span />
         )}
         {step < steps.length - 1 ? (
-          <button type="submit" className="inline-flex h-11 items-center rounded-full bg-ink px-6 text-[14px] font-medium text-white hover:bg-black">
+          <button type="submit" className="inline-flex h-12 items-center bg-ink px-6 text-[11px] font-medium uppercase tracking-[0.18em] text-[#faf7f2] hover:bg-teal hover:text-ink">
             Continue
           </button>
         ) : (
           <button
             type="submit"
-            className="inline-flex h-11 items-center rounded-full bg-ink px-6 text-[14px] font-medium text-white hover:bg-black disabled:opacity-70"
+            className="inline-flex h-12 items-center bg-ink px-6 text-[11px] font-medium uppercase tracking-[0.18em] text-[#faf7f2] hover:bg-teal hover:text-ink disabled:opacity-70"
             disabled={submitting}
           >
             {submitting ? "Sending" : "Send request"}

@@ -15,11 +15,11 @@ type ButtonProps = {
 }
 
 const variants: Record<Variant, string> = {
-  primary: "rounded-full bg-ink text-white hover:bg-black",
-  inverse: "rounded-full bg-white text-ink hover:bg-white/90",
-  secondary: "rounded-full bg-white/10 text-white ring-1 ring-inset ring-white/35 backdrop-blur-md hover:bg-white hover:text-ink",
-  ghost: "rounded-full bg-transparent px-0 text-teal hover:underline",
-  light: "rounded-full bg-[#e8e8ed] text-ink hover:bg-[#d2d2d7]",
+  primary: "bg-ink text-[#faf7f2] hover:bg-teal hover:text-ink",
+  inverse: "bg-[#faf7f2] text-ink hover:bg-white",
+  secondary: "bg-transparent text-white ring-1 ring-inset ring-white/45 backdrop-blur-md hover:bg-[#faf7f2] hover:text-ink",
+  ghost: "bg-transparent px-0 text-teal hover:text-ink",
+  light: "bg-[#ebe4da] text-ink hover:bg-[#e0d6c8]",
 }
 
 function ArrowIcon() {
@@ -46,7 +46,7 @@ export function Button({
   disabled = false,
   onClick,
 }: ButtonProps) {
-  const classes = `group inline-flex h-11 items-center justify-center gap-2 px-6 text-[14px] font-medium tracking-[-0.01em] transition-colors duration-300 disabled:cursor-not-allowed disabled:opacity-60 ${variants[variant]} ${className}`
+  const classes = `group inline-flex h-12 items-center justify-center gap-3 px-7 text-[11px] font-medium uppercase tracking-[0.18em] transition-colors duration-500 disabled:cursor-not-allowed disabled:opacity-60 ${variants[variant]} ${className}`
   const content = (
     <>
       <span>{children}</span>

@@ -81,14 +81,14 @@ export function Header({ onHeight }: HeaderProps) {
 
   const linkClass = (to: string) => {
     const active = isActive(to, location.pathname)
-    return `relative py-2 text-[12px] font-normal tracking-[-0.01em] transition-colors duration-300 ${
-      active ? "text-teal" : solid ? "text-ink/70 hover:text-ink" : "text-white/75 hover:text-white"
+    return `relative py-2 text-[11px] font-medium uppercase tracking-[0.16em] transition-colors duration-300 ${
+      active ? "text-teal" : solid ? "text-ink/60 hover:text-ink" : "text-white/70 hover:text-white"
     }`
   }
 
   return (
-    <div ref={shellRef} className={`fixed inset-x-0 top-0 z-50 ${solid ? "border-b border-black/8 bg-[#fbfbfd]/80 backdrop-blur-2xl backdrop-saturate-150" : ""}`}>
-      <div className={`px-5 py-2 text-center text-[11px] font-medium tracking-[0.08em] ${solid ? "text-muted" : "bg-black/70 text-white/70 backdrop-blur-md"}`}>
+    <div ref={shellRef} className={`fixed inset-x-0 top-0 z-50 ${solid ? "border-b border-line bg-[#faf7f2]/88 backdrop-blur-2xl" : ""}`}>
+      <div className={`overflow-hidden px-5 py-2.5 text-center text-[10px] font-medium tracking-[0.16em] whitespace-nowrap text-ellipsis uppercase sm:tracking-[0.28em] ${solid ? "text-muted" : "bg-black/45 text-white/75 backdrop-blur-md"}`}>
         {announcement}
       </div>
       <header className="transition-colors duration-300">
@@ -108,8 +108,8 @@ export function Header({ onHeight }: HeaderProps) {
           <div className="flex items-center gap-3">
             <Link
               to="/quote"
-              className={`hidden h-8 items-center rounded-full px-4 text-[13px] font-medium transition-colors duration-300 sm:inline-flex ${
-                solid ? "bg-ink text-white hover:bg-black" : "bg-white text-ink hover:bg-white/90"
+              className={`hidden h-10 items-center px-5 text-[11px] font-medium uppercase tracking-[0.18em] transition-colors duration-500 sm:inline-flex ${
+                solid ? "bg-ink text-[#faf7f2] hover:bg-teal hover:text-ink" : "bg-transparent text-white ring-1 ring-inset ring-white/50 hover:bg-[#faf7f2] hover:text-ink"
               }`}
             >
               Request a Quote
@@ -137,20 +137,20 @@ export function Header({ onHeight }: HeaderProps) {
         <div
           ref={panelRef}
           id={panelId}
-          className="menu-panel max-h-[calc(100svh-4.5rem)] overflow-y-auto border-t border-black/8 bg-white/95 backdrop-blur-2xl xl:hidden"
+          className="menu-panel max-h-[calc(100svh-4.5rem)] overflow-y-auto border-t border-line bg-[#faf7f2]/96 backdrop-blur-2xl xl:hidden"
         >
           <nav className="mx-auto flex w-full max-w-[1240px] flex-col px-5 py-4 sm:px-8" aria-label="Mobile">
             {navItems.map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
-                className="border-b border-black/8 py-3.5 text-[21px] font-medium tracking-[-0.02em] text-ink"
+                className="border-b border-line py-4 font-display text-[32px] font-medium text-ink"
                 aria-current={isActive(item.to, location.pathname) ? "page" : undefined}
               >
                 {item.label}
               </Link>
             ))}
-            <Link to="/quote" className="mt-6 inline-flex h-11 items-center justify-center rounded-full bg-ink px-5 text-[14px] font-medium text-white">
+            <Link to="/quote" className="mt-6 inline-flex h-12 items-center justify-center bg-ink px-5 text-[11px] font-medium uppercase tracking-[0.18em] text-[#faf7f2]">
               Request a Quote
             </Link>
           </nav>

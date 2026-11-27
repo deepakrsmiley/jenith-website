@@ -190,28 +190,12 @@ export const galleryItems: GalleryItem[] = [
     alt: "Precast column stubs cast on foundation pads, with reinforcement above.",
   },
   {
-    id: "solid-unit-bed",
-    title: "Precast unit on the bed",
-    image: "/catalog/precast/solid-unit-bed.jpg",
-    category: "manufacturing",
-    aspect: "wide",
-    alt: "Large solid precast concrete unit beside the casting bed.",
-  },
-  {
     id: "dish-channel",
     title: "Water dish channel",
     image: "/catalog/kerbs/dish-channel.jpg",
     category: "products",
     aspect: "square",
     alt: "Precast water dish channel with a textured dished face.",
-  },
-  {
-    id: "dish-load",
-    title: "Dish channels for delivery",
-    image: "/catalog/kerbs/dish-load.jpg",
-    category: "products",
-    aspect: "wide",
-    alt: "Two precast dish channels loaded for delivery.",
   },
   {
     id: "half-batter",

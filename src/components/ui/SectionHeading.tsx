@@ -10,12 +10,17 @@ export function SectionHeading({ eyebrow, title, text, invert = false, as = "h2"
   const Heading = as
   return (
     <div className="max-w-3xl">
-      {eyebrow ? <p className="text-[12px] font-medium tracking-[0.04em] text-teal">{eyebrow}</p> : null}
-      <Heading className={`mt-3 text-[40px] leading-[1.02] sm:text-[52px] md:text-[64px] ${invert ? "text-white" : "text-ink"}`}>
+      {eyebrow ? (
+        <p className="flex items-center gap-3 text-[11px] font-medium uppercase tracking-[0.28em] text-teal">
+          <span className="h-px w-8 bg-teal" aria-hidden="true" />
+          {eyebrow}
+        </p>
+      ) : null}
+      <Heading className={`mt-4 text-[42px] leading-[0.98] sm:text-[56px] md:text-[68px] ${invert ? "text-white" : "text-ink"}`}>
         {title}
       </Heading>
       {text ? (
-        <p className={`mt-5 max-w-xl text-[17px] leading-[1.5] sm:text-[19px] ${invert ? "text-white/60" : "text-muted"}`}>{text}</p>
+        <p className={`mt-6 max-w-xl text-[16px] leading-[1.7] font-light sm:text-[18px] ${invert ? "text-white/65" : "text-muted"}`}>{text}</p>
       ) : null}
     </div>
   )

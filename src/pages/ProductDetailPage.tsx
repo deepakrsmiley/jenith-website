@@ -56,7 +56,7 @@ export function ProductDetailPage() {
       <section className="bg-white py-16 md:py-24">
         <div className="mx-auto grid w-full max-w-[1120px] gap-12 px-5 sm:px-8 lg:grid-cols-[1.05fr_0.95fr]">
           <div onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
-            <button type="button" className="block w-full overflow-hidden rounded-[22px] text-left shadow-[0_24px_60px_rgba(0,0,0,0.08)]" onClick={() => setLightbox(activeImage)}>
+            <button type="button" className="block w-full overflow-hidden rounded-sm text-left shadow-[0_24px_60px_rgba(0,0,0,0.08)]" onClick={() => setLightbox(activeImage)}>
               <ImageCycle
                 images={frames}
                 alt={current.alt}
@@ -109,7 +109,7 @@ export function ProductDetailPage() {
             <h2 className="mt-8 text-xl text-ink">Typical applications</h2>
             <ul className="mt-3 flex flex-wrap gap-2">
               {product.suitableFor.map((item) => (
-                <li key={item} className="rounded-full bg-[#f5f5f7] px-4 py-2 text-[13px]">
+                <li key={item} className="rounded-full bg-[#f3efe8] px-4 py-2 text-[13px]">
                   {item}
                 </li>
               ))}

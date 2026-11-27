@@ -49,31 +49,31 @@ export function Hero() {
           sizes="100vw"
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/45 to-black/80" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-[#14110e]/88" />
 
       <div
         className="relative z-10 mx-auto flex w-full max-w-[980px] flex-1 flex-col items-center justify-center px-6 pb-20 text-center"
         style={{ paddingTop: offset + 24 }}
       >
         <motion.p
-          className="text-[12px] font-medium tracking-[0.04em] text-white/65"
+          className="text-[11px] font-medium uppercase tracking-[0.32em] text-[#e4d3b8]"
           initial={fade.hidden}
           animate={fade.show}
           transition={{ duration: reduce ? 0 : 0.55 }}
         >
-          Engineered for strength. Built for tomorrow.
+          Engineered for strength
         </motion.p>
         <motion.h1
-          className="mt-4 max-w-5xl text-[44px] leading-[1.02] font-semibold text-white sm:text-[60px] lg:text-[76px]"
+          className="mt-5 max-w-5xl text-[52px] leading-[0.92] font-medium text-white sm:text-[72px] lg:text-[92px]"
           initial={fade.hidden}
           animate={fade.show}
-          transition={{ duration: reduce ? 0 : 0.6, delay: reduce ? 0 : 0.08 }}
+          transition={{ duration: reduce ? 0 : 0.7, delay: reduce ? 0 : 0.08 }}
         >
           Precision in Concrete.
-          <span className="mt-1 block">Confidence in Every Build.</span>
+          <span className="mt-2 block font-normal italic text-white/85">Confidence in every build.</span>
         </motion.h1>
         <motion.p
-          className="mt-6 max-w-xl text-[17px] leading-[1.5] text-white/70 sm:text-[19px]"
+          className="mt-7 max-w-xl text-[16px] leading-[1.7] font-light text-white/75 sm:text-[18px]"
           initial={fade.hidden}
           animate={fade.show}
           transition={{ duration: reduce ? 0 : 0.6, delay: reduce ? 0 : 0.16 }}
@@ -93,18 +93,18 @@ export function Hero() {
             Request a Quotation
           </Button>
         </motion.div>
-        <a href="#introduction" className="mt-12 inline-flex w-fit items-center gap-3 text-[12px] font-medium text-white/70">
-          <span className="scroll-hint block h-8 w-px bg-white/80" />
+        <a href="#introduction" className="mt-14 inline-flex w-fit items-center gap-3 text-[10px] font-medium uppercase tracking-[0.28em] text-white/70">
+          <span className="scroll-hint block h-10 w-px bg-[#c4a574]" />
           Scroll
         </a>
       </div>
 
-      <div className="relative z-10 border-t border-white/10 bg-black text-white">
-        <div className="mx-auto grid w-full max-w-[980px] grid-cols-2 gap-y-8 px-6 py-10 sm:py-12 lg:grid-cols-4">
+      <div className="relative z-10 border-t border-[#c4a574]/30 bg-[#14110e] text-white">
+        <div className="mx-auto grid w-full max-w-[1120px] grid-cols-2 gap-y-8 px-6 py-10 sm:py-12 lg:grid-cols-4">
           {credibility.map((item) => (
-            <div key={item.label} className="px-3 text-center">
-              <p className="text-[13px] font-medium tracking-[-0.01em] text-white">{item.label}</p>
-              <p className="mt-1.5 text-[12px] leading-snug text-white/50">{item.detail}</p>
+            <div key={item.label} className="px-4 text-center">
+              <p className="font-display text-[22px] font-medium text-white">{item.label}</p>
+              <p className="mt-2 text-[12px] leading-snug font-light tracking-wide text-white/50">{item.detail}</p>
             </div>
           ))}
         </div>

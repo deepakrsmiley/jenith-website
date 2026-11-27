@@ -6,7 +6,7 @@ export function ProcessTimeline() {
   const reduce = useReducedMotion()
 
   return (
-    <section id="process" className="bg-[#f5f5f7] py-24 md:py-36">
+    <section id="process" className="bg-[#f3efe8] py-24 md:py-36">
       <div className="mx-auto w-full max-w-[1120px] px-5 sm:px-8">
         <SectionHeading
           eyebrow="Project process"
@@ -34,7 +34,7 @@ export function ProcessTimeline() {
                 transition={{ duration: 0.45, delay: reduce ? 0 : index * 0.08 }}
               >
                 <div className="flex items-start gap-4 md:block">
-                  <span className="relative z-10 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-ink text-[13px] font-medium text-white">
+                  <span className="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center border border-teal bg-[#faf7f2] font-display text-[20px] text-ink">
                     {step.number}
                   </span>
                   <div className="md:mt-6">

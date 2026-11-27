@@ -17,11 +17,11 @@ export function ContactPage() {
         text="Send the project essentials. Direct phone, email, and office details will be published when they are confirmed."
         image="photo-1497366216548-37526070297c"
       />
-      <section className="bg-[#f5f5f7] py-20 md:py-28">
+      <section className="bg-[#f3efe8] py-20 md:py-28">
         <div className="mx-auto grid w-full max-w-[1180px] items-start gap-8 px-5 sm:px-8 lg:grid-cols-[0.82fr_1.18fr]">
           <aside className="lg:sticky lg:top-[calc(var(--header-offset)+28px)]">
-            <div className="rounded-[32px] bg-black px-7 py-9 text-white sm:px-9 sm:py-11">
-              <p className="text-[12px] font-medium tracking-[0.04em] text-teal">{company.name}</p>
+            <div className="rounded-sm bg-[#14110e] px-7 py-9 text-white sm:px-9 sm:py-11">
+              <p className="text-[11px] font-medium uppercase tracking-[0.28em] text-teal">{company.name}</p>
               <h2 className="mt-4 text-[36px] leading-[1.05] font-semibold tracking-[-0.04em] md:text-[44px]">
                 Write with the project in mind.
               </h2>
@@ -43,7 +43,7 @@ export function ContactPage() {
       </section>
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto w-full max-w-[760px] px-5 sm:px-8">
-          <p className="text-[12px] font-medium tracking-[0.04em] text-teal">Questions</p>
+          <p className="text-[11px] font-medium uppercase tracking-[0.28em] text-teal">Questions</p>
           <h2 className="mt-3 text-[36px] leading-[1.05] font-semibold tracking-[-0.04em] text-ink md:text-[48px]">
             Before you send a request.
           </h2>

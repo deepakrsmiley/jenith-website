@@ -44,7 +44,7 @@ export function HomePage() {
           />
           <div className="mt-10 grid gap-4 md:grid-cols-2">
             {technicalGroups.map((group) => (
-              <article key={group.id} className="rounded-[22px] bg-[#f5f5f7] p-6">
+              <article key={group.id} className="rounded-sm bg-[#f3efe8] p-6">
                 <h3 className="text-xl text-ink">{group.title}</h3>
                 <ul className="mt-3 space-y-1 text-muted">
                   {group.parameters.map((parameter) => (
@@ -75,7 +75,7 @@ export function HomePage() {
         </div>
       </section>
 
-      <section id="gallery" className="bg-[#f5f5f7] py-24 md:py-36">
+      <section id="gallery" className="bg-[#f3efe8] py-24 md:py-36">
         <div className="mx-auto w-full max-w-[1120px] px-5 sm:px-8">
           <SectionHeading
             eyebrow="Gallery"
@@ -85,7 +85,7 @@ export function HomePage() {
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {preview.map((item) => (
               <figure key={item.id}>
-                <div className="overflow-hidden rounded-[28px] shadow-[0_20px_50px_rgba(0,0,0,0.08)]">
+                <div className="overflow-hidden rounded-sm shadow-[0_20px_50px_rgba(0,0,0,0.08)]">
                   <Photo
                     id={item.image}
                     alt={item.alt}

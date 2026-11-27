@@ -27,7 +27,7 @@ export function GalleryView() {
               key={item.id}
               type="button"
               aria-pressed={selected}
-              className={`h-8 shrink-0 rounded-full px-4 text-[13px] font-medium ${selected ? "bg-ink text-white" : "bg-[#e8e8ed] text-ink"}`}
+              className={`h-9 shrink-0 px-4 text-[11px] font-medium uppercase tracking-[0.16em] ${selected ? "bg-ink text-[#faf7f2]" : "bg-[#ebe4da] text-ink"}`}
               onClick={() => {
                 setFilter(item.id)
                 setOpenIndex(null)
@@ -42,7 +42,7 @@ export function GalleryView() {
       <div className="masonry mt-6">
         {visible.map((item, index) => (
           <article key={item.id} className="masonry-item">
-            <button type="button" className="group block w-full overflow-hidden rounded-[22px] text-left shadow-[0_16px_40px_rgba(0,0,0,0.06)]" onClick={() => setOpenIndex(index)}>
+            <button type="button" className="group block w-full overflow-hidden rounded-sm text-left shadow-[0_16px_40px_rgba(0,0,0,0.06)]" onClick={() => setOpenIndex(index)}>
               <Photo
                 id={item.image}
                 alt={item.alt}
